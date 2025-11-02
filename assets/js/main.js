@@ -2,14 +2,14 @@
 
 
 // Redirection JS vers la page 404 UNIQUEMENT EN FONCTIONNEMENT LOCAL
-// window.addEventListener("DOMContentLoaded", () => {
-//    const path = window.location.pathname;
-//    const existingPages = ["./conditions-vente.html", "./index.html", "./404.html", "./about.html", "./confidentialite.html", "./contact.html", "./mentions-legales.html", "./plan-du-site.html", "./portfolio.html", "./presentation.html", "./services.html"]
-//
-//    if (!existingPages.includes(path)) {
-//        window.location.href = "404.html";
-//    }
-//});
+window.addEventListener("DOMContentLoaded", () => {
+    const path = window.location.pathname;
+    const existingPages = ["./conditions-vente.html", "./index.html", "./404.html", "./about.html", "./confidentialite.html", "./contact.html", "./mentions-legales.html", "./plan-du-site.html", "./portfolio.html", "./presentation.html", "./services.html"]
+
+    if (!existingPages.includes(path)) {
+        window.location.href = "404.html";
+    }
+});
 
 
 // === Injection du bouton "Retour en haut"

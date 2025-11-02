@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //Fonction pour charger le loader commun à toutes les pages
 async function includeLoader() {
-    const response = await fetch("./partials/loader.html");
+    const response = await fetch("partials/loader.html");
     const html = await response.text();
     document.body.insertAdjacentHTML("afterbegin", html);
 }
@@ -83,7 +83,7 @@ setTimeout(hideLoader, 3000);
 
 // Fonction pour charger la bannière des cookies
 async function includeCookieBanner() {
-    const response = await fetch("./partials/cookies-banner.html");
+    const response = await fetch("partials/cookies-banner.html");
     const html = await response.text();
     document.body.insertAdjacentHTML("beforeend", html);
 }

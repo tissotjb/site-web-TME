@@ -1,23 +1,23 @@
 [
     {
-        "titre": "Ref fictive 1",
-        "description": "Mission",
+        "titre": "College GUILHERMY",
+        "description": "Métrés TCE",
         "image": "assets/medias/portfolio/Archi1.jpg",
-        "budget": "Montant projet"
+        "budget": "Budget non communiqué"
     },
 
     {
-        "titre": "Ref fictive 2",
-        "description": "Mission",
+        "titre": "Terrasses du Comminges",
+        "description": "Métrés et chiffrage Gros-Oeuvre",
         "image": "assets/medias/portfolio/Archi2.jpg",
-        "budget": "Montant projet"
+        "budget": "1 500 000.00 € HT"
     },
 
     {
-        "titre": "Ref fictive 3",
-        "description": "Mission",
+        "titre": "Résidence Jeune's AKTIFS - Tarbes",
+        "description": "Métrés et chiffrage Gros-Oeuvre",
         "image": "assets/medias/portfolio/Archi3.jpg",
-        "budget": "Montant projet"
+        "budget": "1 250 000.00 € HT"
     },
 
     {
@@ -28,17 +28,24 @@
     },
 
     {
-        "titre": "Horizon - Kaufman & Broad",
-        "description": "Métrés TCE",
+        "titre": "Résidence LALOUBERE - Tarbes",
+        "description": "Métrés Gros-Oeuvre",
         "image": "assets/medias/portfolio/Horizon - Kaufman.jpg",
-        "budget": "25 000 000.00 € HT"
+        "budget": "Budget non communiqué"
     },
 
     {
-        "titre": "Terre des Hommes - TME",
-        "description": "Estimation TCE",
+        "titre": "Labastide St-Pierre - ALTEAL",
+        "description": "Métrés Gros Oeuvre",
         "image": "assets/medias/portfolio/Terre des hommes - TMH.jpg",
-        "budget": "13 500 000.00 € HT"
+        "budget": "Budget non communiqué"
+    },
+
+    {
+        "titre": "HEREIDA Green City",
+        "description": "Métrés et chiffrage Gros Oeuvre",
+        "image": "assets/medias/portfolio/Terre des hommes - TMH.jpg",
+        "budget": "3 500 000.00 € HT"
     }
 
 ]
