@@ -3,7 +3,7 @@
 
 // Redirection JS vers la page 404 UNIQUEMENT EN FONCTIONNEMENT LOCAL
 window.addEventListener("DOMContentLoaded", () => {
-    const path = window.location.pathname.split("/").pop(); // récupère le nom du fichier
+    const path = window.location.pathname.split("/").pop() || "index.html"; // récupère le nom du fichier
     const existingPages = [
         "conditions-vente.html",
         "index.html",
@@ -17,8 +17,34 @@ window.addEventListener("DOMContentLoaded", () => {
         "presentation.html",
         "./services.html"]
 
-    if (!existingPages.includes(path) && path!== "404.html") {
+    // Détection du mode GitHub Pages (hebergement en ligne)
+    const isGitHubPages = window.location.hostname.includes("github.io");
+
+    // Si la page n'existe pas
+    const pageNotFound = !existingPages.includes(path)
+
+    // ---- Cas 1 : en local ----
+    // On redirige vers la page 404.html
+    if (!isGitHubPages && pageNotFound && path!== "404.html") {
         window.location.href = "404.html";
+        return;
+    }
+
+    // ---- Cas 2 : sur GitHub Pages ----
+    // GitHub Pages sert déjà le 404.html si il existe à la racine
+    // On vérifie que le document est bien le 404.html
+    if (isGitHubPages && document.title === "") {
+        // On insère dynamiquement le contenu de 404.html
+        fetch("404.html")
+            .then(response => response.text())
+            .then(html => {
+                document.open();
+                document.write(html);
+                document.close();
+            })
+            .catch(err => {
+                console.error("Erreur de chargement de la page 404:", err);
+            });
     }
 });
 
