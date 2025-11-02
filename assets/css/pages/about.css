@@ -139,7 +139,7 @@ main.about-page {
 }
 
 .contact-container strong {
-    color: #ffffff;
+    color: #2E4A66;
 }
 
 .contact-container .map {
@@ -185,6 +185,7 @@ main.about-page {
 
 .about-card p {
     color: #F5F5F5;
+    text-align: center;
 }
 
 .about-card:hover {
@@ -253,6 +254,23 @@ main.about-page {
 
     .about-chiffres .chiffre-item {
         width: 90%;
+    }
+
+    .about-chiffres .chiffre-item p {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .contact-container {
+        justify-content: center;
+    }
+
+    .about-contact .info p{
+        text-align: center;
+    }
+
+    .about-card p {
+        display: none;
     }
 
     .about-action {

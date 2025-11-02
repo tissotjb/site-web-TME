@@ -2,21 +2,21 @@
     {
         "titre": "College GUILHERMY",
         "description": "Métrés TCE",
-        "image": "assets/medias/portfolio/Archi1.jpg",
+        "image": "assets/medias/portfolio/CollegeGuilhermy.png",
         "budget": "Budget non communiqué"
     },
 
     {
         "titre": "Terrasses du Comminges",
         "description": "Métrés et chiffrage Gros-Oeuvre",
-        "image": "assets/medias/portfolio/Archi2.jpg",
+        "image": "assets/medias/portfolio/TerrassesComminges.png",
         "budget": "1 500 000.00 € HT"
     },
 
     {
         "titre": "Résidence Jeune's AKTIFS - Tarbes",
         "description": "Métrés et chiffrage Gros-Oeuvre",
-        "image": "assets/medias/portfolio/Archi3.jpg",
+        "image": "assets/medias/portfolio/JeunesAktifsTarbes.png",
         "budget": "1 250 000.00 € HT"
     },
 
@@ -24,27 +24,27 @@
         "titre": "Citroen - Promologis",
         "description": "Métrés & chiffrage Gros-Oeuvre",
         "image": "assets/medias/portfolio/Citroen - Promologis.jpg",
-        "budget": "1 500 000.00 € HT"
+        "budget": "Budget non communiqué"
     },
 
     {
         "titre": "Résidence LALOUBERE - Tarbes",
         "description": "Métrés Gros-Oeuvre",
-        "image": "assets/medias/portfolio/Horizon - Kaufman.jpg",
+        "image": "assets/medias/portfolio/Laloubere.png",
         "budget": "Budget non communiqué"
     },
 
     {
         "titre": "Labastide St-Pierre - ALTEAL",
         "description": "Métrés Gros Oeuvre",
-        "image": "assets/medias/portfolio/Terre des hommes - TMH.jpg",
+        "image": "assets/medias/portfolio/LabastideStPierreAlteal.png",
         "budget": "Budget non communiqué"
     },
 
     {
         "titre": "HEREIDA Green City",
         "description": "Métrés et chiffrage Gros Oeuvre",
-        "image": "assets/medias/portfolio/Terre des hommes - TMH.jpg",
+        "image": "assets/medias/portfolio/HereidaGreenCity.png",
         "budget": "3 500 000.00 € HT"
     }
 
