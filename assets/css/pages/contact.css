@@ -31,7 +31,22 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     margin-bottom: 40px;
 }
 
-/* ===== Formulaire ===== */
+/* ===== Formulaire Google Forms ===== */
+.iframe-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 1109px;
+    border: none;
+}
+
+/* ===== Formulaire PHP ===== */
 form#contactForm {
     display: flex;
     flex-direction: column;
@@ -105,9 +120,25 @@ form#contactForm {
 }
 
 /* ===== Responsive ===== */
+@media (max-width: 992px) {
+    .iframe-container iframe {
+        height: 1400px;
+    }
+}
+
 @media (max-width: 768px) {
     .contact-page {
         margin: 40px 15px;
         padding: 40px 15px;
+    }
+}
+
+@media (max-width:576px) {
+    .contact-page h1 {
+        font-size: 2rem;
+    }
+
+    .contact-page p {
+        font-size: 1rem;
     }
 }

@@ -1,6 +1,6 @@
 <?php
 // --- Configuration ---
-$destinataire = "tissotjb@laposte.net"; // Adresse email de réception
+$destinataire = ""; // Adresse email de réception
 $sujet_general = "Nouveau message depuis le formulaire de contact - TME";
 
 // --- Vérification de la méthode ---
