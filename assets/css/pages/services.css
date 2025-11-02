@@ -84,11 +84,13 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 .service-content h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .service-content p {
     font-size: 1rem;
     line-height: 1.5;
+    text-align: center;
 }
 
 /* Alignement alterné */

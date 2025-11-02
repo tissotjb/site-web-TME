@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
         "plan-du-site.html",
         "portfolio.html",
         "presentation.html",
-        "./services.html"]
+        "services.html"]
 
     // Détection du mode GitHub Pages (hebergement en ligne)
     const isGitHubPages = window.location.hostname.includes("github.io");

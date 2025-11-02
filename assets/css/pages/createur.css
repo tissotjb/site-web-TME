@@ -49,48 +49,68 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     color: #2E2E2E;
 }
 
-/* Table des expériences */
+/* ----- SECTION EXPERIENCES ----- */
 .createur-experiences {
     padding: 80px 10%;
-    background-color: #FFF;
+    background: #FAFAFA;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    animation: fadeInUp 0.8s ease;
 }
 
-.createur-experiences h2{
-    text-align: center;
+.createur-experiences {
     font-size: 2rem;
-    margin-bottom: 40px;
     color: #2E4A66;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
 }
 
+.createur-experiences h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #2E4A66;
+    border-radius: 2px;
+}
+
+/* ---- TABLE STYLE ----- */
 .createur-experiences table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #f5f5f5;
-    border-radius: 10px;
+    font-size: 1rem;
+    background: white;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 1s ease;
 }
 
-.createur-experiences th, .createur-experiences td {
-    padding: 15px 20px;
+.createur-experiences th,
+.createur-experiences td {
+    padding: 16px 20px;
     text-align: left;
 }
 
-.createur-experiences th {
-    background-color: #2E4A66;
+.createur-experiences thead {
+    background: #2E4A66;
     color: #F5F5F5;
     text-transform: uppercase;
-    font-weight: 500;
     letter-spacing: 0.5px;
 }
 
-.createur-experiences tr:nth-child(even) {
-    background-color: #EEF4F9;
+.createur-experiences tbody tr {
+    border-bottom: 1px solid #EEE;
+    transition: all .03s ease;
 }
 
-.createur-experiences tr:hover {
-    background-color: #97C1E1;
-    transition: 0.3s;
+.createur-experiences tbody tr:hover {
+    background-color: #F5FAFF;
+    transform: scale(1.01);
 }
 
 /* Section formation */
@@ -188,8 +208,40 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
         height: 200px;
     }
 
-    .createur-experiences table {
-        font-size: 0.9rem;
+    .createur-experiences table,
+    .createur-experiences thead,
+    .createur-experiences tbody,
+    .createur-experiences th,
+    .createur-experiences td,
+    .createur-experiences tr {
+        display: block;
+        width: 100%;
+    }
+
+    .createur-experiences thead {
+        display: none;
+    }
+
+    .createur-experiences tr {
+        background: white;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        padding: 16px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .createur-experiences td {
+        text-align: left;
+        padding: 8px 0;
+        position: relative;
+    }
+
+    .createur-experiences {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #2E4A66;
+        display: block;
+        margin-bottom: 4px;
     }
 
     .createur-formation .formation-content {
@@ -240,4 +292,15 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 .scroll-right.visible {
     opacity: 1;
     transform: translateX(0);
+}
+
+/* ----- ANIMATIONS ----- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px);}
+    to { opacity: 1; transform: translateY(0);}
 }

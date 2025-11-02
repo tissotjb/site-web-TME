@@ -34,8 +34,8 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     align-items: center;
     gap: 60px;
     margin: 20px 0 20px 0;
-    width: calc(550%);
-    animation: defilement 20s linear infinite;
+    width: calc(100%); /* AJUSTER EN FONCTION DU NOMBRE DE LOGO */
+    /* animation: defilement 20s linear infinite; */
 }
 
 /* Logos */
@@ -73,6 +73,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 @media (max-width: 768px) {
     .logo-track {
         gap: 30px;
+        justify-content: center;
     }
     .logo-track img {
         height: 50px;
