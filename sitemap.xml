@@ -2,27 +2,32 @@
 
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://127.0.0.1:5500/index.html</loc>
+        <loc>https://tissotjb.github.io/site-web-TME/index.html</loc>
         <lastmod>2025-10-25</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>http://127.0.0.1:5500/about.html</loc>
+        <loc>https://tissotjb.github.io/site-web-TME/about.html</loc>
         <lastmod>2025-10-25</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://127.0.0.1:5500/services.html</loc>
+        <loc>https://tissotjb.github.io/site-web-TME/contact.html</loc>
         <lastmod>2025-10-25</lastmod>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
     <url>
-        <loc>http://127.0.0.1:5500/portfolio.html</loc>
+        <loc>https://tissotjb.github.io/site-web-TME/services.html</loc>
         <lastmod>2025-10-25</lastmod>
-        <priority>0.7</priority>
+        <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://127.0.0.1:5500/presentation.html</loc>
+        <loc>https://tissotjb.github.io/site-web-TME/portfolio.html</loc>
+        <lastmod>2025-10-25</lastmod>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://tissotjb.github.io/site-web-TME/presentation.html</loc>
         <lastmod>2025-10-25</lastmod>
         <priority>0.5</priority>
     </url>
