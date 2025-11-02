@@ -32,6 +32,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 .logo-track {
     display: flex;
     align-items: center;
+    justify-content: center; /* A RETIRER POUR L'ANIMATION EN CARROUSSEL */
     gap: 60px;
     margin: 20px 0 20px 0;
     width: calc(100%); /* AJUSTER EN FONCTION DU NOMBRE DE LOGO */
