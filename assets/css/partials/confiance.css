@@ -1,0 +1,80 @@
+/*
+Liste des couleurs de la charte graphique
+Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
+Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
+Tertiaire : #2E2E2E         - Texte principal
+Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
+Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
+Blanc : #F5F5F5             - Fond principaux (section alternée)
+Accent chaud : #D9A441      - Survol des liens et boutons primaires
+*/
+
+.confiance {
+    text-align: center;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.confiance h2 {
+    color: #2E2E2E;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+/* Conteneur du défilement */
+.logo-defil {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+/* Bande animée */
+.logo-track {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: 20px 0 20px 0;
+    width: calc(550%);
+    animation: defilement 20s linear infinite;
+}
+
+/* Logos */
+.logo-track img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.logo-track img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+/* Permet de pauser le carrousel au survol d'un logo
+
+.logo-defil:hover .logo-track{
+    animation-play-state: paused;
+} */
+
+/* Animation */
+@keyframes defilement {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-track {
+        gap: 30px;
+    }
+    .logo-track img {
+        height: 50px;
+    }
+}

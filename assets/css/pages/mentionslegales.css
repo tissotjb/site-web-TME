@@ -1,0 +1,170 @@
+/*
+Liste des couleurs de la charte graphique
+Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
+Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
+Tertiaire : #2E2E2E         - Texte principal
+Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
+Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
+Blanc : #F5F5F5             - Fond principaux (section alternée)
+Accent chaud : #D9A441      - Survol des liens et boutons primaires
+*/
+
+/* ===========================
+   Page Mentions Légales
+=========================== */
+.legal-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px 120px; /* top padding pour header fixe */
+    font-family: 'Poppins', sans-serif;
+    color: #2E2E2E;
+    line-height: 1.7;
+}
+
+/* Titre principal */
+.legal-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #002244;
+}
+
+.legal-header .date-modif {
+    font-size: 0.95rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Sections principales */
+.legal-section {
+    background-color: #F9F9F9;
+    padding: 40px 30px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Hover léger pour accentuer */
+.legal-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Titres de sections */
+.legal-section h2 {
+    font-size: 1.8rem;
+    color: #002244;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.legal-section h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #97C1E1, #C2D5BE);
+    display: block;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+/* Paragraphes et listes */
+.legal-section p, 
+.legal-section ul, 
+.legal-section ol {
+    font-size: 1rem;
+    color: #2E2E2E;
+    margin-bottom: 15px;
+}
+
+.legal-section ul, .legal-section ol {
+    padding-left: 20px;
+}
+
+.legal-section ul li, .legal-section ol li {
+    margin-bottom: 10px;
+}
+
+/* Liens */
+.legal-section a {
+    color: #97C1E1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.legal-section a:hover {
+    text-decoration: underline;
+}
+
+/* Bouton flottant pour sommaire (si intégré) */
+#btn-sommaire {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    z-index: 1000;
+    background: linear-gradient(135deg, #97C1E1, #C2D5BE);
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+#btn-sommaire:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* Animation apparition (scroll-reveal) */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .legal-page {
+        padding: 60px 15px 80px;
+    }
+
+    .legal-section {
+        padding: 30px 20px;
+        margin-bottom: 30px;
+    }
+
+    .legal-section h2 {
+        font-size: 1.6rem;
+    }
+
+    #btn-sommaire {
+        bottom: 40px;
+        right: 15px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .legal-page {
+        padding: 50px 15px 70px;
+    }
+
+    .legal-section {
+        padding: 25px 15px;
+    }
+
+    .legal-section h2 {
+        font-size: 1.4rem;
+    }
+}

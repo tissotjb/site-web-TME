@@ -1,0 +1,119 @@
+/*
+Liste des couleurs de la charte graphique
+Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
+Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
+Tertiaire : #2E2E2E         - Texte principal
+Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
+Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
+Blanc : #F5F5F5             - Fond principaux (section alternée)
+Accent chaud : #D9A441      - Survol des liens et boutons primaires
+*/
+
+.presentation {
+    padding: 80px 5%;
+    background-color: #F9F9F9;
+    color: #2E2E2E;
+}
+
+.presentation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.presentation-text {
+    flex: 1 1 500px;
+}
+
+.presentation-text h2 {
+    font-size: 2.2rem;
+    color: #2E4A66;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.presentation-text h2::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #2E4A66, #C2D5BE);
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+.presentation-text p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.presentation-text ul {
+    margin: 10px 0 20px 20px;
+}
+
+.presentation-text li {
+    margin-bottom: 5px;
+    list-style-type: "✓ ";
+    color: #2E4A66;
+    font-weight: 500;
+}
+
+.presentation-image {
+    flex-direction: 1 1 400px;
+    text-align: center;
+}
+
+.presentation-image img {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.presentation-image img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Bouton CTA */
+.btn-presentation {
+    display: inline-block;
+    background: linear-gradient(135deg, #2E4A66, #97C1E1);
+    color: #F5F5F5;
+    padding: 6px 25px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 120, 215, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-presentation:hover {
+    background: linear-gradient(135deg, #97C1E1 , #C2D5BE);
+    transform: translateY(-3px);
+    color: #2E2E2E;
+    box-shadow: 0 10px 30px rgba(0, 120, 215, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .presentation-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .presentation-image img {
+        max-width: 100%;
+    }
+
+    .presentation-text h2::after {
+        margin: 10px auto 0;
+    }
+}

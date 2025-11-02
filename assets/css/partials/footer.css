@@ -1,0 +1,284 @@
+/*
+Liste des couleurs de la charte graphique
+Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
+Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
+Tertiaire : #2E2E2E         - Texte principal
+Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
+Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
+Blanc : #F5F5F5             - Fond principaux (section alternée)
+Accent chaud : #D9A441      - Survol des liens et boutons primaires
+*/
+
+/* ANCIENNE VERSION 
+
+footer ul {
+    list-style: none;
+}
+
+footer h4, footer h5 {
+    font-variant: small-caps;
+}
+
+.info-contact {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2E2E2E;
+    color: #F5F5F5;
+    border-radius: 15px 10px 0px 0px;
+}
+
+.info-contact .info {
+    display: flex;
+    flex-direction: row;
+}
+
+.zone-info, .info img {
+    margin: 20px 10px 20px 10px;
+}
+
+.zone-info p, .footer-container p{
+    font-size: 0.9rem;
+}
+
+.info-contact img {
+    height: 50px;
+    width: auto;
+    filter: invert(1);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    background-color: #2E4A66;
+    color: #F5F5F5;
+}
+
+.footer-container div {
+    margin : 20px 10px 20px 10px;
+}
+
+.footer-container a , .footer-container p{
+    font-size: 0.8rem;
+}
+
+.footer-container a:hover {
+    color:#D9A441;
+    background-color: #2E2E2E;
+    border-radius: 10px;
+}
+
+.footer-container .logo img {
+    height: 125px;
+    margin-top: 20%;
+}
+
+.nav-links ul a {
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+.reseaux img {
+    height: 25px;
+    width: auto;
+    filter: invert(1);
+}
+
+.reseaux ul a {
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    gap: 5px;
+    margin-left: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+.infos-diverses ul a{
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+.copyright {
+    color: #F5F5F5;
+    background-color: #2E2E2E;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 5px 0 5px 0;
+}
+
+.mentions-legales {
+    color: #D9A441;
+}  */
+
+/* ===== SECTION CONTACT (Bandeau haut) ===== */
+.info-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2E2E2E, #2E4A66);
+    color: #F5F5F5;
+    gap: 15%;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.info-contact .info{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    /* flex: 1 1 250px;
+    min-width: 250px; */
+}
+
+.info-contact img {
+    width: 35px;
+    height: 35px;
+    filter: brightness(0) invert(1); /* Pour des icones blanches */
+}
+
+.info-contact h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.info-contact p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* SECTION PRINCIPALE (footer-container) */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    background-color: #2E2E2E;
+    color: #F5F5F5;
+    padding: 60px 8%;
+    text-align: left;
+}
+
+.footer-container h4 {
+    font-size: 1.1rem;
+    color: #97C1E1;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-container h4::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #97C1E1;
+    border-radius: 3px;
+    margin-top: 6px;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-container ul a {
+    color: #F5F5F5;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+    transition: all 0.3s ease;
+}
+
+.footer-container ul a:hover {
+    color: #97C1E1;
+    text-decoration: underline;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+.footer-container .logo img {
+    width: 140px;
+    filter: grayscale(1);
+    transition: transform 0.3s ease;
+}
+
+.footer-container .logo img:hover {
+    transform: scale(1.05);
+}
+
+.footer-container .reseaux img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1);
+}
+
+/* SECTION COPYRIGHT (bandeau bas) */
+.copyright {
+    background-color: #0A0A0A;
+    color: #AAA;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
+
+.copyright a {
+    color: #97C1E1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+    color: #C2D5BE;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .info-contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .footer-container {
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container .logo img {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .info img {
+        width: 30px;
+        height: auto;
+    }
+
+    .info h4 {
+        font-size: 0.9rem;
+    }
+
+    .info p {
+        font-size: 0.85rem;
+    }
+}

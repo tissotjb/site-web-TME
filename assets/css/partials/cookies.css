@@ -1,0 +1,68 @@
+/*
+Liste des couleurs de la charte graphique
+Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
+Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
+Tertiaire : #2E2E2E         - Texte principal
+Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
+Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
+Blanc : #F5F5F5             - Fond principaux (section alternée)
+Accent chaud : #D9A441      - Survol des liens et boutons primaires
+*/
+
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #5C7340;
+    color: #F5F5F5;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    z-index: 10000;
+    max-width: 600px;
+    font-size: 0.9rem;
+}
+
+.cookie-banner a {
+    color: #C2D5BE;
+    text-decoration: underline;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-accept, .btn-reject {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-accept:hover, .btn-reject:hover {
+    background-color: #D9A441;
+    color: #2E2E2E;
+}
+
+.btn-accept {
+    background-color: #C2D5BE;
+    color: #2E2E2E;
+}
+
+.btn-reject {
+    background-color: #2E4A66;
+    color: #F5F5F5;
+}
+
+.cookie-banner.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}

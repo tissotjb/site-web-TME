@@ -1,0 +1,154 @@
+/*
+Liste des couleurs de la charte graphique
+Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
+Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
+Tertiaire : #2E2E2E         - Texte principal
+Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
+Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
+Blanc : #F5F5F5             - Fond principaux (section alternée)
+Accent chaud : #D9A441      - Survol des liens et boutons primaires
+*/
+
+/* ===========================
+   Page Confidentialité & RGPD
+=========================== */
+.privacy-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px 120px;
+    color: #2E2E2E;
+    line-height: 1.7;
+}
+
+/* Header de page */
+.privacy-header {
+    position: static !important; /* ✅ Force la section à rester dans le flux normal */
+    background: linear-gradient(135deg, #f5f7fa, #dbe5f0);
+    text-align: center;
+    padding: 80px 20px 60px; /* espace sous le header global */
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.privacy-header h1 {
+    font-size: 2rem;
+    color: #002244;
+    margin-bottom: 8px;
+}
+
+.privacy-header p {
+    font-size: 0.90rem;
+    color: #666;
+    margin-top: 0;
+}
+
+/* Section de contenu */
+.privacy-content {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.privacy-content h2, 
+.privacy-content h3 {
+    color: #002244;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.privacy-content ul {
+    margin-left: 20px;
+    list-style: disc;
+}
+
+.privacy-content li {
+    margin-bottom: 8px;
+}
+
+/* Bouton CTA */
+.privacy-action {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.privacy-action h2 {
+    font-size: 2rem;
+    color: #002244;
+    margin-bottom: 20px;
+}
+
+.privacy-action p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.btn-action {
+    background: linear-gradient(135deg, #97C1E1, #C2D5BE);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-action:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Scroll-reveal animation */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .privacy-page {
+        padding: 60px 15px 80px;
+    }
+
+    .privacy-section {
+        padding: 30px 20px;
+        margin-bottom: 30px;
+    }
+
+    .privacy-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .privacy-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .btn-action {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .privacy-page {
+        padding: 50px 15px 70px;
+    }
+
+    .privacy-section {
+        padding: 25px 15px;
+    }
+
+    .privacy-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .privacy-section h3 {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,155 @@
+/*
+Liste des couleurs de la charte graphique
+Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
+Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
+Tertiaire : #2E2E2E         - Texte principal
+Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
+Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
+Blanc : #F5F5F5             - Fond principaux (section alternée)
+Accent chaud : #D9A441      - Survol des liens et boutons primaires
+*/
+
+.error-404 {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2E2E2E, #2E4A66);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F5F5F5;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Effet décoratif subtil en arrière-plan */
+.error-404::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(circle at center, rgba(255, 255, 255, 0.05), transparent 60%);
+    animation: rotateBG 20s linear infinite;
+    z-index: 0;
+}
+
+@keyframes rotateBG {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg);}
+}
+
+/* Conteneur principal */
+.container-404 {
+    position: relative;
+    z-index: 1;
+    padding: 3rem 2rem;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Effet d'apparition fluide */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Titre 404 */
+.container-404 h1 {
+    font-size: 8rem;
+    margin: 0;
+    font-weight: 700;
+    color: #97C1E1;
+    text-shadow: 0 0 15px rgba(151, 193, 225, 0.5);
+    animation: glow 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px rgba(151, 193, 225, 0.4); }
+    to { text-shadow: 0 0 25px rgba(151, 193, 225, 0.9); }
+}
+
+/* Sous-titre */
+.container-404 h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #F5F5F5;
+}
+
+/* Paragraphe descriptif */
+.container-404 p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 1.5rem;
+}
+
+/* Bouton principal */
+.btn-primary {
+    display: inline-block;
+    background-color: #97C1E1;
+    color: #2E2E2E;
+    padding: 0.9rem 1.8rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(151, 193, 225, 0.4);
+}
+
+.btn-primary:hover {
+    background-color: #6DA5CC;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(151, 193, 225, 0.6);
+}
+
+/* Suggestions */
+.suggestions{
+    margin-top: 2rem;
+}
+
+.suggestions p {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    color: #D8E6F3;
+}
+
+.suggestions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.suggestions li {
+    margin: 0.4rem 0;
+}
+
+.suggestions a {
+    color: #97C1E1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.suggestions a:hover {
+    color: #F5F5F5;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container-404 h1 {
+        font-size: 5rem;
+    }
+
+    .container-404 {
+        padding: 2rem 1.5rem;
+    }
+}

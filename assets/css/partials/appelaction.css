@@ -1,0 +1,101 @@
+/*
+Liste des couleurs de la charte graphique
+Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
+Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
+Tertiaire : #2E2E2E         - Texte principal
+Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
+Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
+Blanc : #F5F5F5             - Fond principaux (section alternée)
+Accent chaud : #D9A441      - Survol des liens et boutons primaires
+*/
+
+.appel-action {
+    background:linear-gradient(135deg, #2E4A66, #97C1E1);
+    color: #F5F5F5;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    margin: 60px auto;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.appel-action::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    background: radial-gradient(circle at top left, rgba(255,255,255,0.1), transparent 60%);
+    animation: lightpulse 8s linear infinite;
+    z-index: 0;
+}
+
+@keyframes lightpulse {
+    0% {transform: translateX(-20%); opacity: 0.6;}
+    50% {transform: translateX(20%); opacity: 0.3;}
+    100% {transform: translateX(-20%); opacity: 0.6;}
+}
+
+.appel-action strong {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+.appel-action p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-devis-hero {
+    background: linear-gradient(90deg, #97C1E1 , #C2D5BE) ;
+    border: 1px solid #2E4A66;
+    color: #2E2E2E;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 15px rgba(0, 200, 83, 0.3);
+}
+
+.btn-devis-hero:hover{
+    background: linear-gradient(90deg, #2E2E2E, #97C1E1);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(10, 41, 23, 0.4);
+    border: 1px solid #97C1E1;
+    color: #F5F5F5;
+}
+
+@media (max-width: 768px) {
+    .appel-action {
+        padding: 60px 15px;
+    }
+
+    .appel-action strong {
+        font-size: 1.6rem;
+    }
+
+    .appel-action p {
+        font-size: 1rem;
+    }
+
+    .btn-devis-hero {
+        font-size: 1rem;
+        padding: 12px 30px;
+    }
+}

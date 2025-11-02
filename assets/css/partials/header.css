@@ -1,0 +1,283 @@
+/*
+Liste des couleurs de la charte graphique
+Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
+Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
+Tertiaire : #2E2E2E         - Texte principal
+Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
+Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
+Blanc : #F5F5F5             - Fond principaux (section alternée)
+Accent chaud : #D9A441      - Survol des liens et boutons primaires
+*/
+
+/* ANCIENNE VERSION 
+header {
+    background-color: #2E4A66;
+    border-radius: 0px 0px 25px 15px;
+    padding: 1%;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transform: background-color 0.3s ease;
+}
+
+header a {
+    color: #f5f5f5;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    flex: 0 0 15%;
+    height: 75px;
+}
+
+.navigation{
+    flex: 0 0 70%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+nav ul a {
+    border-radius: 10px 5px 10px 5px;
+    align-items: center;
+    padding: 10px;
+    gap : 10px;
+}
+
+nav ul a li {
+    align-items: center;
+    vertical-align:middle;
+}
+
+nav ul a:hover{
+    background:linear-gradient(135deg,#97C1E1 , #C2D5BE);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+nav ul a:hover li{
+    color: #2E4A66;
+    text-decoration: underline;
+}
+
+.btn-devis {
+    flex: 0 0 15%;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.cta {
+    border: 1px solid #2E4A66;
+    padding: 15px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #97C1E1 , #C2D5BE);
+    color: #2E4A66;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.cta:hover {
+    background:linear-gradient(135deg, #2E2E2E, #97C1E1);
+    border: 1px solid #97C1E1;
+    transform: scale(1.05);
+    color: #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+@media (max-width:1000px) {
+    .logo {
+        display: none;
+    }
+    .btn-devis {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex: 0 0 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}   */
+
+header {
+    width: 100%;
+    background-color: #2E4A66;
+    color: #F5F5F5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px 5%; /* Header grand par défaut */
+    transition: all 0.3s ease; /* Transition fluide */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header au scroll */
+header.scrolled {
+    padding: 5px 5%; /* Header plus petit */
+    background-color: #002244;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+header.scrolled .logo img {
+    height: 40px; /* Logo plus petit */
+}
+
+header.scrolled .btn-devis .cta-header {
+    padding: 4px 20px; /* Bouton légèrement plus petit */
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.header-container .logo img {
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.header-container .logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation */
+.navigation ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul a {
+    text-decoration: none;
+    color: #F5F5F5;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navigation ul a:hover {
+    color: #97C1E1;
+}
+
+/* Bouton devis */
+.btn-devis .cta-header {
+    background: linear-gradient(135deg, #97C1E1 , #C2D5BE);
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: #2E2E2E;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btn-devis .cta-header:hover {
+    background: linear-gradient(90deg, #2E2E2E, #97C1E1);
+    color: #F5F5F5;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 168, 232, 0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    /* Masquer logo et bouton*/
+    .header-container .logo, .btn-devis {
+        display: none;
+    }
+
+    /* Navigation centrée et adaptative */
+    .navigation ul {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Menu burger */
+    .navigation {
+        position: relative;
+    }
+
+    .navigation ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        z-index: 999;
+        border-top: 1px solid #97C1E1;
+    }
+
+    .navigation ul.show {
+        display: flex;
+        flex-direction: column;
+        background-color: #2E4A66; /* Fond plein */
+    }
+
+    .navigation ul a {
+        display: block; /* Occupe toute la largeur */
+        padding: 12px 20px;
+        color: #F5F5F5;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .navigation ul a:hover {
+        background-color: #1F3B53; /* Survol plus foncé */
+    }
+
+    /* Burger icon */
+    .burger {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 22px;
+        position: relative;
+    }
+
+    .burger span {
+        background-color: #F5F5F5;
+        display: block;
+        height: 4px;
+        margin: 4px 0;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .burger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+}

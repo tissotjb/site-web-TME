@@ -1,0 +1,19 @@
+# encodage par défaut
+AddDefaultCharset UTF-8
+
+# Redirection vers HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L, R=301]
+
+# Page 404 personnalisée
+ErrorDocument 404 /404.html
+
+# Optionnel : empêche l'affichage des index de dossier
+Options -Indexes
+
+# Protection du dossier /data/
+<Directory "/data">
+    Order allow,deny
+    Deny from all
+</Directory>

@@ -1,0 +1,114 @@
+/*
+Liste des couleurs de la charte graphique
+Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
+Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
+Tertiaire : #2E2E2E         - Texte principal
+Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
+Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
+Blanc : #F5F5F5             - Fond principaux (section alternée)
+Accent chaud : #D9A441      - Survol des liens et boutons primaires
+*/
+
+.hero-banner {
+    position: relative;
+    height: 100vh;                  /*plein écran */
+    background-image: url(../../medias/images/batiment.jpg);
+    background-size: cover;         /* l'image couvre toute la zone */
+    background-position: center;    /* centrée sur l'écran */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: -4rem;
+    transition: background-image 1s ease-in-out;
+}
+
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* Couvre toute la section */
+    background: linear-gradient(rgba(11,44,72,0.7), rgba(0,0,0,0.3));
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* le texte passe au-dessus du fond */
+    max-width: 900px;
+    padding: 0 20px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== TITRE ===== */
+.hero-banner .titre-page {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    color: #E9EEF3;
+}
+
+/* ===== SOUS-TITRE ===== */
+.hero-content p {
+    font-size: 1.3rem;
+    color: #F5F5F5;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* ===== BOUTON HERO ===== */
+.btn-hero {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #F5F5F5;
+    background: linear-gradient(135deg, #2E4A66 , #97C1E1);
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+    background: linear-gradient(135deg, #97C1E1 , #C2D5BE);
+    transform: translateY(-3px);
+    color: #2E2E2E;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width : 768px) {
+    .hero-banner{
+        height: 70vh; /* Un peu moins haute sur mobile */
+        background-attachment: scroll;
+    }
+
+    .hero-banner h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .btn-hero {
+        font-size: 1rem;
+        padding: 12px 28px;
+    }
+}

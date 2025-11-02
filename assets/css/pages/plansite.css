@@ -1,0 +1,176 @@
+/*
+Liste des couleurs de la charte graphique
+Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
+Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
+Tertiaire : #2E2E2E         - Texte principal
+Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
+Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
+Blanc : #F5F5F5             - Fond principaux (section alternée)
+Accent chaud : #D9A441      - Survol des liens et boutons primaires
+*/
+
+/* =============================
+    PAGE PLAN DU SITE
+================================ */
+main.plan-site {
+    background-color: #F5F7FA;
+    color: #2E4A66;
+    padding: 120px 8% 80px;
+}
+
+/* INTRO */
+.plan-intro {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.plan-intro h1 {
+    font-size: 2.5rem;
+    color: #2E4A66;
+    margin-bottom: 10px;
+}
+
+.plan-intro p {
+    color: #2E2E2E;
+    font-size: 1.1rem;
+}
+
+/* LISTE */
+.plan-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    background-color: #FFF;
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.plan-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan-container ul li {
+    margin: 18px 0;
+}
+
+.plan-container ul a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2E4A66;
+    padding: 10px 16px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.plan-containerul a:hover {
+    background: linear-gradient(135deg, #97C1E1, #C2D58E);
+    color: #FFF;
+    transform: translateX(6px);
+}
+
+/* ICONES SVG */
+
+.plan-container .icon {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-container .icon svg {
+    width: 100%;
+    height: 100%;
+    stroke-width: 2;
+    transition: all 0.3s ease;
+}
+
+.plan-container ul a:hover svg {
+    stroke: #fff;
+    transform: scale(1.1);
+}
+
+/* ACTION */
+.plan-action {
+    text-align: center;
+    margin-top: 100px;
+    padding: 80px 8%;
+    background: linear-gradient(135deg, #2E4A66, #1F3B53);
+    border-radius: 20px;
+    color: #FFF;
+}
+
+.plan-action h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.plan-action p {
+    color: #EAF3FB;
+    margin-bottom: 25px;
+}
+
+.btn-plan {
+    display: inline-block;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #97C1E1, #C2D58E);
+    border-radius: 30px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-plan:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ANIMATION SCROLL */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .plan-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .plan-container ul a {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .plan-container .icon {
+        margin-right: 0;
+    }
+
+    .plan-action {
+        margin-top: 80px;
+        padding: 60px 6%;
+    }
+}

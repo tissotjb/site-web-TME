@@ -1,0 +1,198 @@
+/*
+Liste des couleurs de la charte graphique
+Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
+Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
+Tertiaire : #2E2E2E         - Texte principal
+Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
+Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
+Blanc : #F5F5F5             - Fond principaux (section alternée)
+Accent chaud : #D9A441      - Survol des liens et boutons primaires
+*/
+
+/* ===== SECTION SERVICES DETAILS ===== */
+.services-detail {
+    padding: 80px 5%;
+    background-color: #F5F5F5;
+}
+
+.services-detail h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #2E4A66;
+}
+
+.services-detail .intro{
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 60px;
+    color: #2E2E2E;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+
+/* Carte de service */
+.service-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 900px;
+    padding: 40px 30px;
+    color: #FFF;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.service-card:hover {
+    max-width: 100vw;
+    border-radius: 0;
+    padding: 60px 50px;
+    transform: scale(1.02);
+    z-index: 2;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Background image dégradé */
+.service-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+    z-index: 0;
+}
+
+/* Contenu par-dessus */
+.service-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.service-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.service-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Alignement alterné */
+.service-card.left {
+    margin-left: 0;
+    margin-right: auto;
+    animation: slideInRight 1s ease forwards;
+    opacity: 0;
+}
+
+.service-card.right {
+    margin-left: auto;
+    margin-right: 0;
+    animation: slideInLeft 1s ease forwards;
+    opacity: 0;
+}
+
+/* Animation d'entrée */
+@keyframes slideInRight {
+    from { transform: translateX(100px); opacity: 0;}
+    to {transform: translateX(0px); opacity: 1;}    
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100px); opacity: 0;}
+    to {transform: translateX(0px); opacity: 1;}    
+}
+
+/* Hover leger */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== SECTION CONTACT CTA ===== */
+.contact-cta {
+    padding: 80px 5%;
+    background: linear-gradient(135deg, #2E4A66, #97C1E1);
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.contact-cta h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.contact-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.contact-cta .service-btn-primary {
+    display: inline-block;
+    background: linear-gradient(90deg, #97C1E1 , #C2D5BE) ;
+    border: 1px solid #2E4A66;
+    color: #2E2E2E;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-cta .service-btn-primary:hover {
+    background: linear-gradient(90deg, #2E2E2E, #97C1E1);
+    border: 1px solid #97C1E1;
+    color: #F5F5F5;
+    transform: translateY(-3px);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+    .service-card {
+        padding: 30px 20px;
+        min-height: 220px;
+    }
+
+    .service-card:hover {
+        max-width: 100%;
+        border-radius: 20px;
+        padding: 40px 30px;
+        transform: none;
+    }
+
+    .service-card.left,
+    .service-card.right {
+        margin: 0 auto;
+        animation: slideInUp 0.8s ease forwards;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .service-content p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Animation pour mobile */
+@keyframes slideInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

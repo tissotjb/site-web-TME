@@ -1,0 +1,56 @@
+/*
+Liste des couleurs de la charte graphique
+Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
+Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
+Tertiaire : #2E2E2E         - Texte principal
+Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
+Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
+Blanc : #F5F5F5             - Fond principaux (section alternée)
+Accent chaud : #D9A441      - Survol des liens et boutons primaires
+*/
+
+/* Import depuis la racine */
+@import url('reset.css');
+@import url('transition.css');
+
+/* Import pour les styles partiels */
+@import url('partials/appelaction.css');
+@import url('partials/boutonhautpage.css');
+@import url('partials/confiance.css');
+@import url('partials/cookies.css');
+@import url('partials/footer.css');
+@import url('partials/header.css');
+@import url('partials/herobanner.css');
+@import url('partials/presentationaccueil.css');
+@import url('partials/progressbar.css');
+@import url('partials/servicesaccueil.css');
+
+/* Import pour les styles de pages */
+@import url('pages/404.css');
+@import url('pages/about.css');
+@import url('pages/CGV.css');
+@import url('pages/confidentialite.css');
+@import url('pages/contact.css');
+@import url('pages/createur.css');
+@import url('pages/loader.css');
+@import url('pages/mentionslegales.css');
+@import url('pages/plansite.css');
+@import url('pages/portfolio.css');
+@import url('pages/services.css');
+
+/* Style généraux */
+
+body {
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+.titre-page {
+    text-align: center;
+    margin-bottom: 10px;
+}
+

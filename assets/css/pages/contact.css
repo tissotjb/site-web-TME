@@ -1,0 +1,113 @@
+/*
+Liste des couleurs de la charte graphique
+Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
+Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
+Tertiaire : #2E2E2E         - Texte principal
+Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
+Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
+Blanc : #F5F5F5             - Fond principaux (section alternée)
+Accent chaud : #D9A441      - Survol des liens et boutons primaires
+*/
+
+.contact-page {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 0 20px;
+    background-color: #F5F5F5;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-page h1 {
+    font-size: 2rem;
+    color: #2E4A66;
+    margin-bottom: 10px;
+}
+
+.contact-page p {
+    font-size: 1rem;
+    color: #2E2E2E;
+    margin-bottom: 40px;
+}
+
+/* ===== Formulaire ===== */
+form#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2E2E2E;
+}
+
+.form-group input, 
+.form-group textarea {
+    padding: 12px 15px;
+    border: 2px solid #F5F5F5;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #2E4A66;
+    box-shadow: 0 0 10px rgba(30, 96, 145, 0.2);
+    outline: none;
+}
+
+/* Checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.checkbox-group label {
+    font-size: 0.95rem;
+    color: #2E2E2E;
+}
+
+/* ===== Bouton Envoyer ===== */
+.btn-submit {
+    padding: 14px 40px;
+    background: linear-gradient(90deg, #2E4A66 , #97C1E1);
+    color: #F5F5F5;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center;
+}
+
+.btn-submit:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(9, 37, 21, 0.4);
+    background: linear-gradient(90deg, #97C1E1 , #C2D5BE);
+    color: #2E2E2E;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .contact-page {
+        margin: 40px 15px;
+        padding: 40px 15px;
+    }
+}

@@ -1,0 +1,147 @@
+<!-- 
+==============================================
+= index.html
+= Crée par Jean-Baptiste TISSOT
+= PAGE D'ACCUEIL DU SITE
+==============================================
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TME - Tissot Métrés & Economie</title>
+
+    <!--Chargement de l'icone-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!--Lien vers les feuilles de style -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+    <div data-include="partials/header.html"></div>
+
+    <!-- Contenu principal de la page -->
+    <main>
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h1 class="titre-page">TME - Tissot Métrés & Economie</h1>
+                <p><em>Métrés TCE, estimation et vérification de devis pour une maîtrise totale des coûts</em><p></p>
+                <a href="contact.html" class="btn-hero">Demander un devis</a>
+            </div>
+        </section>
+
+        <section class="presentation">
+            <div class="presentation-container">
+                <div class="presentation-text">
+                    <h2>Présentation de TME</h2>
+                    <p><strong>TME - Tissot Métrés & Economie</strong> est une entreprise individuelle spécialisée dans les <strong>métrés TCE, l'estimation de projet</strong> et la <strong>vérification de devis</strong>.
+                    Basée à <strong>Toulouse</strong>, TME accompagne les professionnels du bâtiment — maîtres d’œuvre, architectes et entreprises générales — dans la <strong>maîtrise des coûts</strong> et la <strong>fiabilité des estimations</strong>.</p>
+
+                    <p>Mes prestations couvrent:
+                        <ul>
+                            <li>Métrés Gros Oeuvre et Tous Corps d'Etat</li>
+                            <li>Estimations par lot ou global</li>
+                            <li>Vérification et comparaison de devis</li>
+                        </ul>
+                    </p>
+
+                    <p>Mes clients : <em>architectes, maîtres d'oeuvre, maîtres d'ouvrages, assistants à la maîtrise d'ouvrages et entreprises de la construction</em></p>
+                    
+                    <p>Pour plus d'information, vous pouvez visiter la page 
+                    <a href="about.html" class="btn-presentation">Présentation</a>
+                </p>
+                </div>
+
+                <div class="presentation-image">
+                    <img src="assets/medias/logo/Logo.png" alt="Illustration TME">
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2 class="section-title">Mes services</h2>
+            <p class="savoir-plus">Survolez ou cliquez sur une image pour en savoir plus</p>
+            <div class="services-grid">
+
+                <div class="service-item">
+                    <img src="assets/medias/images/batiment.jpg" alt="Métrés GO et TCE">
+                    <div class="service-overlay">
+                        <h3>Métrés GO & TCE</h3>
+                        <p>Réalisation de métrés précis et complets pour le Gros Oeuvre et Tous Corps d'Etats</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <img src="assets/medias/images/estimation.jpg" alt="Estimation de projet">
+                    <div class="service-overlay">
+                        <h3>Estimation de projet</h3>
+                        <p>Chiffrage de projet, par lot ou TCE, selon vos méthodes de calcul et documents</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <img src="assets/medias/images/verif.jpg" alt="Vérification / Comparaison de devis">
+                    <div class="service-overlay">
+                        <h3>Vérification et comparaison de devis</h3>
+                        <p>Analyse, comparaison et validation des devis pour assurer la cohérence technique et financière à votre projet</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-services">
+                <p>Découvrez le détail de mes prestations</p>
+                <a href="services.html" class="btn-services">Voir la page Services</a>
+            </div>
+
+        </section>
+
+        <section class="portfolio">
+            <h3>Mes derniers projets</h3>
+            
+            <!-- Utilise la même classe que le reste du portfolio -->
+            <div class="portfolio-grid">
+                <div class="project">
+                    <div class="project-image">
+                        <img src="./assets/medias/portfolio/Citroen - Promologis.jpg" alt="Projet Citroën - Promologis">
+                    </div>
+                    <div class="overlay">
+                        <h4>Citroën - Promologis</h4>
+                        <p>Réalisation des métrés et estimations GO</p>
+                        <p><strong>Budget total :</strong> 1 750 000,00 €</p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-image">
+                        <img src="./assets/medias/portfolio/Horizon - Kaufman.jpg" alt="Projet Horizon - Kaufman & Broad">
+                    </div>
+                    <div class="overlay">
+                        <h4>Horizon - Kaufman & Broad</h4>
+                        <p>Réalisation des métrés TCE</p>
+                        <p><strong>Budget total :</strong> 25 000 000,00 €</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div data-include="partials/confiance.html"></div>
+
+        <section class="appel-action">
+            <strong>Besoin d'un devis ou de précision?</strong>
+            <p>Contactez-moi dès aujourd'hui pour une réponse rapide et un accompagnement sur mesure.</p>
+            <a href="contact.html" class="btn-devis-hero">Demander un devis</a>
+        </section>
+    </main>
+
+    <div data-include="partials/footer.html"></div>
+
+    <script src="assets/js/includes.js"></script>
+    <script src="assets/js/cookies.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

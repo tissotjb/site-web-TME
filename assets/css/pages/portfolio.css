@@ -1,0 +1,208 @@
+.portfolio-header {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.portfolio-header h1 {
+  font-size: 2.4rem;
+  color: #002244;
+  margin-bottom: 10px;
+}
+
+.portfolio-header p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+}
+
+.portfolio-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  color: #002244;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.card-content p {
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* --- Apparition fluide --- */
+.portfolio-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Classe appliquée au moment où la carte devient visible */
+.portfolio-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Pour un effet de cascade fluide */
+.portfolio-card:nth-child(1) { transition-delay: 0.1s; }
+.portfolio-card:nth-child(2) { transition-delay: 0.2s; }
+.portfolio-card:nth-child(3) { transition-delay: 0.3s; }
+.portfolio-card:nth-child(4) { transition-delay: 0.4s; }
+.portfolio-card:nth-child(5) { transition-delay: 0.5s; }
+
+/* ===== CSS POUR REFERENCES SUR INDEX.HTML ===== */
+/* ====== Section Portfolio ====== */
+.portfolio {
+  padding: 80px 10%;
+  background: #f9f9fb;
+  text-align: center;
+}
+
+.portfolio h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.portfolio h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0078ff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ====== Grille de projets ====== */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* ====== Carte projet ====== */
+.project {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ====== Image du projet ====== */
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project:hover .project-image img {
+  transform: scale(1.1);
+}
+
+/* ====== Overlay ====== */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.8);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  padding: 20px;
+  text-align: center;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.overlay p {
+  font-size: 0.95rem;
+  margin: 5px 0;
+  color: #ddd;
+}
+
+.overlay strong {
+  color: #fff;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 60px 5%;
+  }
+
+  .portfolio h3 {
+    font-size: 1.7rem;
+  }
+
+  .overlay {
+    padding: 15px;
+  }
+
+  .overlay h4 {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,211 @@
+/*
+Liste des couleurs de la charte graphique
+Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
+Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
+Tertiaire : #2E2E2E         - Texte principal
+Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
+Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
+Blanc : #F5F5F5             - Fond principaux (section alternée)
+Accent chaud : #D9A441      - Survol des liens et boutons primaires
+*/
+
+/* PAGE CGV / MENTIONS LEGALES ET POLITIQUE CONFIDENTIALITE */
+.cgv-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    line-height: 1.7;
+    color: #2E2E2E;
+    background: linear-gradient(180deg, #FFFFFF, #F8FAFC);
+}
+
+/* Header principal */
+.cgv-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.cgv-header h1 {
+    font-size: 2.2rem;
+    color: #2E4A66;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.cgv-header .date-modif {
+    font-size: 0.95rem;
+    color: #7A8A8F;
+}
+
+/* Articles */
+.cgv-article {
+    margin-bottom: 3rem;
+    background: #FFF;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cgv-article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Titres */
+.cgv-article h3 {
+    font-size: 1.5rem;
+    color: #2F4F60;
+    margin-bottom: 1rem;
+    border-left: 4px solid #97C1E1;
+    padding-left: 0.75rem;
+}
+
+.cgv-article h5 {
+    font-size: 1.1rem;
+    color: #3D5B63;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Paragraphes et listes */
+.cgv-article p {
+    margin-bottom: 1rem;
+}
+
+.cgv-article ul {
+    list-style: none;
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.cgv-article ul li {
+    position: relative;
+    margin-bottom: 0.6rem;
+    padding-left: 1.2rem;
+}
+
+.cgv-article ul li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #97C1E1;
+}
+
+/* Liens */
+.cgv-article a {
+    color: #97C1E1;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.cgv-article a:hover {
+    color: #2f4f60;
+    text-decoration: underline;
+}
+
+/* Animation fluide (scroll reveal déjà présente sur ton site) */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* SOMMAIRE FLOTTANT */
+.toc {
+    position: fixed;
+    top: 120px;
+    left: 2rem;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.2rem;
+    width: 220px;
+    transition: all 0.3s ease;
+}
+
+.toc-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-content li {
+    margin-bottom: 0.6rem;
+}
+
+.toc-content a {
+    color: #3D5B63;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s, font-weight 0.2s;
+}
+
+.toc-content a:hover {
+    color: #97C1E1
+}
+
+.toc-content a.active {
+    font-weight: 600;
+    color: #2F4F60;
+    border-left: 3px solid #97C1E1;
+    padding-left: 0.5rem;
+}
+
+/* Bouton mobile */
+.toc-toggle {
+    display: none;
+    background: #2F4F60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 1024px){
+    .toc {
+        position: fixed;
+        top: 80px;
+        left: 10px;
+        width: auto;
+        padding: 0.5rem;
+        z-index: 999;
+    }
+
+    .toc-content {
+        display: none;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        background: white;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        width: 220px;
+    }
+
+    .toc.active .toc-content {
+        display: block;
+    }
+
+    .toc-toggle {
+        display: inline-block;
+    }
+}
+
+/* Espace pour ne pas chevaucher le contenu principal sur grand écran */
+@media (min-width: 1025px) {
+    .cgv-page {
+        margin-left: 280px;
+    }
+}

@@ -1,0 +1,5 @@
+txt
+
+User-agent: *
+Allow: /
+Sitemap : http://192.168.1.148:5500/data/sitemap.xml
