@@ -1,6 +1,7 @@
-txt
-
 User-agent: *
+Disallow: /forms/
+Disallow: /scripts/
 Disallow: /partials/
+Allow: /
 
-Sitemap : https://tissotjb.github.io/site-web-TME/sitemap.xml
+Sitemap: https://tissotjb.github.io/site-web-TME/sitemap.xml
