@@ -129,6 +129,19 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.index header {
+    width: 100%;
+    background: none;
+    color: #F5F5F5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px 5%; /* Header grand par défaut */
+    transition: all 0.3s ease; /* Transition fluide */
+    box-shadow: none;
+}
+
 /* Header au scroll */
 header.scrolled {
     padding: 5px 5%; /* Header plus petit */
