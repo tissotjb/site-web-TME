@@ -152,6 +152,9 @@ header.scrolled {
 
 header.scrolled .logo img {
     height: 40px; /* Logo plus petit */
+    filter: none;
+    scale: calc(1);
+    transition: scale 1s ease;
 }
 
 header.scrolled .btn-devis .cta-header {
@@ -175,6 +178,12 @@ header.scrolled .btn-devis .cta-header {
 
 .header-container .logo img:hover {
     transform: scale(1.05);
+}
+
+.index img {
+    filter: grayscale(0.5);
+    scale: calc(1.3);
+    border-radius: 5px;
 }
 
 /* Navigation */
