@@ -46,6 +46,20 @@
         "description": "Métrés et chiffrage Gros Oeuvre",
         "image": "assets/medias/portfolio/HereidaGreenCity.png",
         "budget": "3 500 000.00 € HT"
-    }
+    },
+
+    {
+        "titre": "VERDUN-SUR-GARONNE Mésolia",
+        "description": "Métrés Gros Oeuvre",
+        "image": "assets/medias/portfolio/VerdunSurGaronne.png",
+        "budget": "Budget non communiqué"
+    },
+
+    {
+        "titre": "RESIDENCE SELECT - Crédit Agricole Immobilier",
+        "description": "Métrés et chiffrage Gros Oeuvre",
+        "image": "assets/medias/portfolio/ResidenceSelect.png",
+        "budget": "Budget non communiqué"
+    },
 
 ]
