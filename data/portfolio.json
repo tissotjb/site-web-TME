@@ -60,6 +60,13 @@
         "description": "Métrés et chiffrage Gros Oeuvre",
         "image": "assets/medias/portfolio/ResidenceSelect.png",
         "budget": "Budget non communiqué"
+    },
+
+    {
+        "titre": "RESIDENCE BOILLOT à AGEN- Demathieu Bard Immobilier",
+        "description": "Métrés Gros Oeuvre",
+        "image": "assets/medias/portfolio/AgenBoillot.png",
+        "budget": "Budget non communiqué"
     }
 
 ]
