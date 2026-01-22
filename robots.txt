@@ -4,4 +4,4 @@ Disallow: /scripts/
 Disallow: /partials/
 Allow: /
 
-Sitemap: https://tissotjb.github.io/site-web-TME/sitemap.xml
+Sitemap: https://tissot-tme.fr/sitemap.xml
