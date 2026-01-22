@@ -1,72 +1,44 @@
 [
     {
-        "titre": "College GUILHERMY",
-        "description": "Métrés TCE",
-        "image": "assets/medias/portfolio/CollegeGuilhermy.png",
-        "budget": "Budget non communiqué"
-    },
-
-    {
-        "titre": "Terrasses du Comminges",
-        "description": "Métrés et chiffrage Gros-Oeuvre",
-        "image": "assets/medias/portfolio/TerrassesComminges.png",
-        "budget": "1 500 000.00 € HT"
-    },
-
-    {
         "titre": "Résidence Jeune's AKTIFS - Tarbes",
         "description": "Métrés et chiffrage Gros-Oeuvre",
         "image": "assets/medias/portfolio/JeunesAktifsTarbes.png",
-        "budget": "1 250 000.00 € HT"
+        "budget": "Surface SHOB : 2 100 m²"
     },
 
     {
         "titre": "Citroen - Promologis",
         "description": "Métrés & chiffrage Gros-Oeuvre",
         "image": "assets/medias/portfolio/Citroen - Promologis.jpg",
-        "budget": "Budget non communiqué"
+        "budget": "Surface SHOB : 6 500 m²"
     },
 
     {
         "titre": "Résidence LALOUBERE - Tarbes",
         "description": "Métrés Gros-Oeuvre",
         "image": "assets/medias/portfolio/Laloubere.png",
-        "budget": "Budget non communiqué"
+        "budget": "Surface SHOB : 3 500 m²"
     },
 
     {
         "titre": "Labastide St-Pierre - ALTEAL",
         "description": "Métrés Gros Oeuvre",
         "image": "assets/medias/portfolio/LabastideStPierreAlteal.png",
-        "budget": "Budget non communiqué"
-    },
-
-    {
-        "titre": "HEREIDA Green City",
-        "description": "Métrés et chiffrage Gros Oeuvre",
-        "image": "assets/medias/portfolio/HereidaGreenCity.png",
-        "budget": "3 500 000.00 € HT"
+        "budget": "Surface SHOB : 1 550 m²"
     },
 
     {
         "titre": "VERDUN-SUR-GARONNE Mésolia",
         "description": "Métrés Gros Oeuvre",
         "image": "assets/medias/portfolio/VerdunSurGaronne.png",
-        "budget": "Budget non communiqué"
-    },
-
-    {
-        "titre": "RESIDENCE SELECT - Crédit Agricole Immobilier",
-        "description": "Métrés et chiffrage Gros Oeuvre",
-        "image": "assets/medias/portfolio/ResidenceSelect.png",
-        "budget": "Budget non communiqué"
+        "budget": "Surface SHOB : 3 200 m²"
     },
 
     {
         "titre": "RESIDENCE BOILLOT à AGEN- Demathieu Bard Immobilier",
         "description": "Métrés Gros Oeuvre",
         "image": "assets/medias/portfolio/AgenBoillot.png",
-        "budget": "Budget non communiqué"
+        "budget": "Surface SHOB : 4 290 m²"
     }
 
 ]
