@@ -3,6 +3,7 @@
         "titre": "Résidence Jeune's AKTIFS - Tarbes",
         "description": "Métrés et chiffrage Gros-Oeuvre",
         "image": "assets/medias/portfolio/JeunesAktifsTarbes.png",
+        "adresse": "51 rue François Marques - 65000 TARBES",
         "budget": "Surface SHOB : 2 100 m²"
     },
 
@@ -10,6 +11,7 @@
         "titre": "Citroen - Promologis",
         "description": "Métrés & chiffrage Gros-Oeuvre",
         "image": "assets/medias/portfolio/Citroen - Promologis.jpg",
+        "adresse": "142 Avenue des Etats Unis - TOULOUSE",
         "budget": "Surface SHOB : 6 500 m²"
     },
 
@@ -17,6 +19,7 @@
         "titre": "Résidence LALOUBERE - Tarbes",
         "description": "Métrés Gros-Oeuvre",
         "image": "assets/medias/portfolio/Laloubere.png",
+        "adresse": "Rue de l'Allée - 65310 LALOUBERE",
         "budget": "Surface SHOB : 3 500 m²"
     },
 
@@ -24,6 +27,7 @@
         "titre": "Labastide St-Pierre - ALTEAL",
         "description": "Métrés Gros Oeuvre",
         "image": "assets/medias/portfolio/LabastideStPierreAlteal.png",
+        "adresse": "Rue Olympe de Gouges - 82370 LABASTIDE ST-PIERRE",
         "budget": "Surface SHOB : 1 550 m²"
     },
 
@@ -31,6 +35,7 @@
         "titre": "VERDUN-SUR-GARONNE Mésolia",
         "description": "Métrés Gros Oeuvre",
         "image": "assets/medias/portfolio/VerdunSurGaronne.png",
+        "adresse": "1 rue Clément Isaure - 82600 VERDUN SUR GARONNE",
         "budget": "Surface SHOB : 3 200 m²"
     },
 
@@ -38,6 +43,7 @@
         "titre": "RESIDENCE BOILLOT à AGEN- Demathieu Bard Immobilier",
         "description": "Métrés Gros Oeuvre",
         "image": "assets/medias/portfolio/AgenBoillot.png",
+        "adresse": "Rue André Boillot - 47000 AGEN",
         "budget": "Surface SHOB : 4 290 m²"
     }
 

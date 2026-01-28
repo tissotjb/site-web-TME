@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="card-content">
             <h3>${projet.titre}</h3>
             <p>${projet.description}</p>
+            <p>${projet.adresse}</p>
             <div class="card-meta">
               <span>${projet.budget}</span>
             </div>
