@@ -42,10 +42,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const burger = document.getElementById('burger');
   const navLinks = document.getElementById('nav-links');
 
-  burger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-    burger.classList.toggle('active');
-  });
+  // Vérifie si l'élément existe avant de l'utiliser
+  if (burger && navLinks) {
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+        burger.classList.toggle('active');
+    });
+  }
 });
 
 //Fonction pour charger le loader commun à toutes les pages
