@@ -26,6 +26,8 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
   font-size: 1.1rem;
 }
 
+/* === ANCIEN CSS PORTFOLIO, CONSERVE SI BESOIN D'UN RETOUR EN ARRIERE === */
+/*
 .portfolio-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -76,6 +78,141 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
   justify-content: space-between;
   font-size: 0.85rem;
   color: #777;
+} */
+
+/* ===== NOUVEAU CSS POUR PORTFOLIO 28/01/2026 ===== */
+/* Code pour que seule les images + titres soient affichés initialement
+Informations complémentaires au clic ou survol */
+
+/* CONTENEUR */
+#portfolio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem ;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+/* CARTE */
+.portfolio-card {
+  position: relative;
+  height: 320px; /* hauteur des cartes uniforme */
+  width: 100%;
+  overflow: hidden;
+  border-radius: 18px;
+  cursor: default;
+  background: #000;
+  outline: none;
+}
+
+/* IMAGE */
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  object-position: center;
+
+  will-change: transform;
+  transform: translateY(0);
+  transition: transform 0.1s linear
+}
+
+/* OVERLAY GENERAL TOUJOURS PRESENT */
+.card-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 12px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.4) 25%,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/* BANDEAU TITRE TOUJOURS VISIBLE */
+.card-content h3{
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #F5F5F5;
+  margin: 0;
+
+  opacity: 1;
+  transform: none;
+
+  background: rgba(46, 74, 102, 0.65);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+/* CONTENU DETAIL (masqué par défaut) */
+
+.card-content p, .card-meta{
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+  color: #F5F5F5;
+
+  line-height: 1.5;
+  max-width: 700px;
+
+}
+
+/* HOVER DESKTOP */
+
+@media (hover: hover) {
+  .portfolio-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .portfolio-card:hover .card-content p,
+  .portfolio-card:hover .card-meta {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE : clic via focus */
+.portfolio-card:focus-within .card-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIBE */
+@media (max-width: 768px) {
+  .card-content {
+    padding: 1.5rem;
+  }
+
+  .card-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .card-content p {
+    font-size: 0.95rem;
+  }
+
+  .portfolio-card {
+    height: 200px;
+  }
 }
 
 /* --- Apparition fluide --- */
@@ -91,7 +228,8 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
   transform: translateY(0);
 }
 
-/* Pour un effet de cascade fluide */
+/* Pour un effet de cascade fluide OBSOLETE AVEC NOUVEAU FORMAT DE PORTFOLIO*/
+/*
 .portfolio-card:nth-child(1) { transition-delay: 0.1s; }
 .portfolio-card:nth-child(2) { transition-delay: 0.2s; }
 .portfolio-card:nth-child(3) { transition-delay: 0.3s; }
@@ -108,6 +246,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 .portfolio-card:nth-child(14) { transition-delay: 1.4s; }
 .portfolio-card:nth-child(15) { transition-delay: 1.5s; }
 .portfolio-card:nth-child(16) { transition-delay: 1.6s; }
+*/
 
 /* ===== CSS POUR REFERENCES SUR INDEX.HTML ===== */
 /* ====== Section Portfolio ====== */
