@@ -82,12 +82,12 @@ document.addEventListener("DOMContentLoaded", () => {
 setTimeout(hideLoader, 3000);
 
 // Fonction pour charger la bannière des cookies
-async function includeCookieBanner() {
-    const response = await fetch("partials/cookies-banner.html");
-    const html = await response.text();
-    document.body.insertAdjacentHTML("beforeend", html);
-}
-includeCookieBanner()
+//async function includeCookieBanner() {
+//    const response = await fetch("partials/cookies-banner.html");
+//    const html = await response.text();
+//    document.body.insertAdjacentHTML("beforeend", html);
+//}
+//includeCookieBanner()
 
 // Barre de progression de lecture
 window.addEventListener("scroll", () => {
