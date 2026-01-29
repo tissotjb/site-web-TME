@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <p>${projet.description}</p>
             <p>${projet.adresse}</p>
             <div class="card-meta">
-              <span>${projet.budget}</span>
+              <span>${projet.surface}</span>
             </div>
           </div>
         `;

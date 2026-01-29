@@ -11,8 +11,8 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 
 .portfolio-header {
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .portfolio-header h1 {
@@ -24,6 +24,18 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 .portfolio-header p {
   color: #555;
   font-size: 1.1rem;
+}
+
+.portfolio-header::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 4px;
+    background: linear-gradient(90deg, #2E4A66, #C2D5BE);
+    margin-top: 8px;
+    border-radius: 2px;
 }
 
 /* === ANCIEN CSS PORTFOLIO, CONSERVE SI BESOIN D'UN RETOUR EN ARRIERE === */
@@ -88,8 +100,8 @@ Informations complémentaires au clic ou survol */
 #portfolio-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem ;
-  max-width: 1100px;
+  gap: 1rem ;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 4rem 1.5rem;
 }
@@ -97,10 +109,10 @@ Informations complémentaires au clic ou survol */
 /* CARTE */
 .portfolio-card {
   position: relative;
-  height: 320px; /* hauteur des cartes uniforme */
+  height: 300px; /* hauteur des cartes uniforme */
   width: 100%;
   overflow: hidden;
-  border-radius: 18px;
+  border-radius: 25px;
   cursor: default;
   background: #000;
   outline: none;
@@ -174,6 +186,11 @@ Informations complémentaires au clic ou survol */
   line-height: 1.5;
   max-width: 700px;
 
+  background: rgba(46, 74, 102, 0.65);
+  padding: 2px;
+  padding-left: 20px;
+  margin-left: 5px;
+  border-radius: 10px;
 }
 
 /* HOVER DESKTOP */
