@@ -1,34 +1,18 @@
 [
     {
-        "titre": "Résidence Jeune's AKTIFS",
-        "description": "Métrés et chiffrage Gros-Oeuvre",
-        "image": "assets/medias/portfolio/JeunesAktifsTarbes.png",
-        "adresse": "51 rue François Marques - 65000 TARBES",
-        "surface": "Surface SHOB : 2 100 m²"
+        "titre": "POLE D'ECHANGE MULTIMODAL DE LABEGE - Tisséo Ingéniérie",
+        "description": "Métrés Gros Oeuvre - Charpente métallique - Façade - Serrurerie lourde",
+        "image": "assets/medias/portfolio/PEMLabege.png",
+        "adresse": "Rue du Chêne Vert - 31670 LABEGE",
+        "surface": "Surface SHOB : 30 000 m²"
     },
 
     {
-        "titre": "CITROEN - Promologis",
-        "description": "Métrés & chiffrage Gros-Oeuvre",
-        "image": "assets/medias/portfolio/Citroen - Promologis.jpg",
-        "adresse": "142 Avenue des Etats Unis - TOULOUSE",
-        "surface": "Surface SHOB : 6 500 m²"
-    },
-
-    {
-        "titre": "Résidence LALOUBERE",
-        "description": "Métrés Gros-Oeuvre",
-        "image": "assets/medias/portfolio/Laloubere.png",
-        "adresse": "Rue de l'Allée - 65310 LALOUBERE",
-        "surface": "Surface SHOB : 3 500 m²"
-    },
-
-    {
-        "titre": "Labastide St-Pierre - ALTEAL",
+        "titre": "RESIDENCE BOILLOT à AGEN - Demathieu Bard Immobilier",
         "description": "Métrés Gros Oeuvre",
-        "image": "assets/medias/portfolio/LabastideStPierreAlteal.png",
-        "adresse": "Rue Olympe de Gouges - 82370 LABASTIDE ST-PIERRE",
-        "surface": "Surface SHOB : 1 550 m²"
+        "image": "assets/medias/portfolio/AgenBoillot.png",
+        "adresse": "Rue André Boillot - 47000 AGEN",
+        "surface": "Surface SHOB : 4 290 m²"
     },
 
     {
@@ -40,11 +24,34 @@
     },
 
     {
-        "titre": "RESIDENCE BOILLOT à AGEN - Demathieu Bard Immobilier",
+        "titre": "Labastide St-Pierre - ALTEAL",
         "description": "Métrés Gros Oeuvre",
-        "image": "assets/medias/portfolio/AgenBoillot.png",
-        "adresse": "Rue André Boillot - 47000 AGEN",
-        "surface": "Surface SHOB : 4 290 m²"
-    }
+        "image": "assets/medias/portfolio/LabastideStPierreAlteal.png",
+        "adresse": "Rue Olympe de Gouges - 82370 LABASTIDE ST-PIERRE",
+        "surface": "Surface SHOB : 1 550 m²"
+    },
 
+    {
+        "titre": "Résidence LALOUBERE",
+        "description": "Métrés Gros-Oeuvre",
+        "image": "assets/medias/portfolio/Laloubere.png",
+        "adresse": "Rue de l'Allée - 65310 LALOUBERE",
+        "surface": "Surface SHOB : 3 500 m²"
+    },
+
+    {
+        "titre": "CITROEN - Promologis",
+        "description": "Métrés & chiffrage Gros-Oeuvre",
+        "image": "assets/medias/portfolio/Citroen - Promologis.jpg",
+        "adresse": "142 Avenue des Etats Unis - TOULOUSE",
+        "surface": "Surface SHOB : 6 500 m²"
+    },
+
+    {
+        "titre": "Résidence Jeune's AKTIFS",
+        "description": "Métrés et chiffrage Gros-Oeuvre",
+        "image": "assets/medias/portfolio/JeunesAktifsTarbes.png",
+        "adresse": "51 rue François Marques - 65000 TARBES",
+        "surface": "Surface SHOB : 2 100 m²"
+    }
 ]
