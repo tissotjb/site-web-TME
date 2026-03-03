@@ -1,5 +1,13 @@
 [
     {
+        "titre": "GRAND FRAIS - Marmande",
+        "description": "Métrés Gros Oeuvre - Dallage & Curage - Démolitions",
+        "image": "assets/medias/portfolio/GrandFraisMarmande.png",
+        "adresse": "18 Avenue Hubert Ruffe - 47200 MARMANDE",
+        "surface": "Surface SHOB : 2 000 m²"
+    },
+    
+    {
         "titre": "POLE D'ECHANGE MULTIMODAL DE LABEGE - Tisséo Ingéniérie",
         "description": "Métrés Gros Oeuvre - Charpente métallique - Façade - Serrurerie lourde",
         "image": "assets/medias/portfolio/PEMLabege.png",
