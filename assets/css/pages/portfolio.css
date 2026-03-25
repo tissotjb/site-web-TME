@@ -38,84 +38,29 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     border-radius: 2px;
 }
 
-/* === ANCIEN CSS PORTFOLIO, CONSERVE SI BESOIN D'UN RETOUR EN ARRIERE === */
-/*
-.portfolio-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto 100px;
-  padding: 0 20px;
-}
-
-.portfolio-card {
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.portfolio-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-.card-image img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 20px;
-}
-
-.card-content h3 {
-  color: #002244;
-  margin-bottom: 10px;
-  font-size: 1.3rem;
-}
-
-.card-content p {
-  color: #555;
-  line-height: 1.5;
-  font-size: 0.95rem;
-  margin-bottom: 15px;
-}
-
-.card-meta {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.85rem;
-  color: #777;
-} */
-
-/* ===== NOUVEAU CSS POUR PORTFOLIO 28/01/2026 ===== */
-/* Code pour que seule les images + titres soient affichés initialement
-Informations complémentaires au clic ou survol */
-
 /* CONTENEUR */
-#portfolio-container {
+.portfolio-container {
   display: flex;
   flex-direction: column;
   gap: 1rem ;
-  max-width: 1400px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 4rem 1.5rem;
+}
+
+.portfolio-container h2 {
+  font-size: 1.6rem;
+  color: #2E4A66;
+  margin-bottom: 10px;
 }
 
 /* CARTE */
 .portfolio-card {
   position: relative;
-  height: 300px; /* hauteur des cartes uniforme */
-  width: 100%;
   overflow: hidden;
-  border-radius: 25px;
-  cursor: default;
-  background: #000;
-  outline: none;
+  border-radius: 12px;
+  height: 260px;
+  cursor: pointer;
 }
 
 /* IMAGE */
@@ -130,80 +75,56 @@ Informations complémentaires au clic ou survol */
 
 .card-image img {
   width: 100%;
-  height: 120%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 
   will-change: transform;
   transform: translateY(0);
-  transition: transform 0.1s linear
-}
-
-/* OVERLAY GENERAL TOUJOURS PRESENT */
-.card-content {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  padding: 40px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 12px;
-
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.75) 0%,
-    rgba(0, 0, 0, 0.4) 25%,
-    rgba(0, 0, 0, 0.1) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
-}
-
-/* BANDEAU TITRE TOUJOURS VISIBLE */
-.card-content h3{
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #F5F5F5;
-  margin: 0;
-
-  opacity: 1;
-  transform: none;
-
-  background: rgba(46, 74, 102, 0.65);
-  padding: 5px;
-  border-radius: 15px;
+  transition: transform 0.5s ease
 }
 
 /* CONTENU DETAIL (masqué par défaut) */
 
-.card-content p, .card-meta{
+.card-content {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(3px);
+
   opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.4s ease;
-  color: #F5F5F5;
+  transition: opacity 0.35s ease;
+}
 
-  line-height: 1.5;
-  max-width: 700px;
+.card-content h3 {
+  color: #fff;
+  font-size: 1.1 rem;
+  margin-bottom: 8px;
+}
 
-  background: rgba(46, 74, 102, 0.65);
-  padding: 2px;
-  padding-left: 20px;
-  margin-left: 5px;
-  border-radius: 10px;
+.card-content p {
+  color: #ddd;
+  font-size: 0.9 rem;
 }
 
 /* HOVER DESKTOP */
 
 @media (hover: hover) {
   .portfolio-card:hover img {
-    transform: scale(1.05);
+    transform: scale(1.08);
   }
 
-  .portfolio-card:hover .card-content p,
-  .portfolio-card:hover .card-meta {
+  .portfolio-card:hover .card-content {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -213,7 +134,7 @@ Informations complémentaires au clic ou survol */
   transform: translateY(0);
 }
 
-/* RESPONSIBE */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .card-content {
     padding: 1.5rem;
@@ -229,6 +150,19 @@ Informations complémentaires au clic ou survol */
 
   .portfolio-card {
     height: 200px;
+  }
+}
+
+@media (hover: none) {
+  .card-content {
+    opacity: 1;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.1)
+    );
+    justify-content: flex-end;
+    padding-bottom: 20px;
   }
 }
 
@@ -294,8 +228,8 @@ Informations complémentaires au clic ou survol */
 /* ====== Grille de projets ====== */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 /* ====== Carte projet ====== */
@@ -382,5 +316,17 @@ Informations complémentaires au clic ou survol */
 
   .overlay h4 {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
   }
 }

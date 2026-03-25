@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(data => {
       data.forEach(projet => {
+        const container = document.getElementById(projet.categorie);
         const card = document.createElement("article");
         card.classList.add("portfolio-card");
 
@@ -19,9 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <h3>${projet.titre}</h3>
             <p>${projet.description}</p>
             <p>${projet.adresse}</p>
-            <div class="card-meta">
-              <span>${projet.surface}</span>
-            </div>
+            <p>${projet.surface}</p>
           </div>
         `;
 
