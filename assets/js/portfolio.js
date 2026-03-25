@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="card-content">
             <h3>${projet.titre}</h3>
             <p>${projet.description}</p>
-            <p>${projet.adresse}</p>
-            <p>${projet.surface}</p>
           </div>
         `;
+
+        card.addEventListener("click", () => openModal(projet))
 
         container.appendChild(card);
       });
@@ -48,5 +48,35 @@ document.addEventListener("DOMContentLoaded", () => {
       container.innerHTML = `<p class="error">Impossible de charger les projets 😕</p>`;
       console.error(error);
     });
+  
+  const modal = document.getElementById("portfolio-modal");
+  const modalBody = modal.querySelector(".modal-body");
+  const closeBtn = modal.querySelector(".modal-close");
+  const overlay = modal.querySelector(".modal-overlay");
+
+  function openModal(projet) {
+    modalBody.innerHTML = `
+    <h2>${projet.titre}</h2>
+    <img src="${projet.image}" alt="{projet.titre}" style="width:100%; margin-bottom:1rem;">
+    <p><strong>Description :</strong> ${projet.description}</p>
+    <p><strong>Adresse :</strong> ${projet.adresse}</p>
+    <p><strong>Surface :</strong> ${projet.surface}</p>
+    `;
+
+    modal.classList.add("show");
+  }
+
+  // Fermeture
+  function closeModal() {
+    modal.classList.remove("show");
+  }
+
+  closeBtn.addEventListener("click", closeModal);
+  overlay.addEventListener("click", closeModal);
+
+  // ESC clavier
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeModal();
+  });
 });
 
