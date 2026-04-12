@@ -1,4 +1,23 @@
 [
+    
+    {
+        "titre": "Résidence Les Sarments - LOFTWOOD",
+        "description": "Métrés Gros Oeuvre",
+        "image": "assets/medias/portfolio/LesSarments.png",
+        "adresse": "39 rue de la voie Romaine - 31150 GAGNAC-SUR-GARONNE",
+        "surface": "Surface SHOB : 10 740 m²",
+        "categorie": "metres-seuls"
+    },
+    
+    {
+        "titre": "Laboratoire De Sangosse",
+        "description": "Métrés Gros Oeuvre",
+        "image": "assets/medias/portfolio/DeSangosseDeyme.png",
+        "adresse": "Chemin des Monges - 31450 DEYME",
+        "surface": "Surface SHOB : 2 750 m²",
+        "categorie": "metres-seuls"
+    },
+
     {
         "titre": "Extension Collège Azaña",
         "description": "Métrés Gros Oeuvre",
