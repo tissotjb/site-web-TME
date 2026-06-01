@@ -125,3 +125,44 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     color: #2E2E2E;
     box-shadow: 0 10px 25px rgba(0, 120, 215, 0.4);
 }
+
+/* Responsive tablette */
+@media screen and (max-width: 1024px) {
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Responsive mobile */
+
+@media screen and (max-width: 768px) {
+
+    .services {
+        padding: 60px 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-item img {
+        height: 220px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .savoir-plus {
+        font-size: 0.95rem;
+        margin-bottom: 30px;
+    }
+
+    .cta-services {
+        margin-top: 40px;
+    }
+}
+
