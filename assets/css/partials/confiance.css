@@ -80,3 +80,17 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
         height: 50px;
     }
 }
+
+@media (max-width: 768px) {
+
+    .logo-track {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .logo-track img {
+        height: 50px;
+    }
+
+}
