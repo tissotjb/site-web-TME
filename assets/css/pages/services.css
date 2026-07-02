@@ -160,20 +160,20 @@
 
 .contact-cta .service-btn-primary {
     display: inline-block;
-    background: linear-gradient(90deg, var(--color-secondary) , var(--color-complementaire-2)) ;
+    background: linear-gradient(90deg, var(--color-primary) , var(--color-secondary)) ;
     border: 1px solid var(--color-primary);
-    color: var(--color-tertiary);
+    color: var(--color-blanc);
     padding: 12px 30px;
     font-weight: 600;
-    border-radius: 30px;
+    border-radius: 10px;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .contact-cta .service-btn-primary:hover {
-    background: linear-gradient(90deg, var(--color-tertiary), var(--color-secondary));
-    border: 1px solid var(--color-secondary);
-    color: var(--color-blanc);
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-accent));
+    border: 1px solid var(--color-accent);
+    color: var(--color-tertiary);
     transform: translateY(-3px);
 }
 

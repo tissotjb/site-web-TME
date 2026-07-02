@@ -70,14 +70,14 @@
     color: var(--color-blanc);
     background: linear-gradient(135deg, var(--color-primary) , var(--color-secondary));
     border: none;
-    border-radius: 50px;
+    border-radius: 10px;
     text-decoration: none;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     transition: all 0.3s ease;
 }
 
 .btn-hero:hover {
-    background: linear-gradient(135deg, var(--color-secondary) , var(--color-complementaire-2));
+    background: linear-gradient(135deg, var(--color-secondary) , var(--color-accent));
     transform: translateY(-3px);
     color: var(--color-tertiary);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);

@@ -118,8 +118,8 @@ main.plan-site {
 .btn-plan {
     display: inline-block;
     padding: 14px 30px;
-    background: linear-gradient(135deg, var(--color-secondary), #C2D58E);
-    border-radius: 30px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border-radius: 10px;
     text-decoration: none;
     color: #FFF;
     font-weight: 600;
@@ -127,8 +127,10 @@ main.plan-site {
 }
 
 .btn-plan:hover {
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+    color: var(--color-tertiary);
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(217, 164, 65, 0.4);
 }
 
 /* ANIMATION SCROLL */

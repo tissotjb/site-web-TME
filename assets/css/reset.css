@@ -1,5 +1,22 @@
 /* ===== reset.css ===== */
 
+/* Chargement de la police de marque (fichiers présents dans assets/fonts, jamais déclarés jusqu'ici) */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
 /* Supprimer les marges et paddings par défauts */
 * {
     margin: 0;
@@ -64,4 +81,9 @@ html, body {
 /* On supprime la mise en forme par défaut des listes */
 html {
     list-style: none;
+}
+
+/* Renforce le contraste entre les titres et le texte courant (les règles plus spécifiques par page restent prioritaires) */
+h1, h2, h3 {
+    font-weight: 800;
 }

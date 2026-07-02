@@ -24,7 +24,7 @@
     left: 25%;
     width: 50%;
     height: 4px;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-complementaire-2));
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
     margin-top: 8px;
     border-radius: 2px;
 }

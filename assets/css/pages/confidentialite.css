@@ -75,19 +75,22 @@
     margin-bottom: 25px;
 }
 
+/* Bouton partagé par about.html et confidentialite.html (définition unique) */
 .btn-action {
-    background: linear-gradient(135deg, var(--color-secondary), var(--color-complementaire-2));
-    color: #fff;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-blanc);
     padding: 12px 25px;
-    border-radius: 30px;
+    border-radius: 10px;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .btn-action:hover {
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+    color: var(--color-tertiary);
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(217, 164, 65, 0.3);
 }
 
 /* Scroll-reveal animation */

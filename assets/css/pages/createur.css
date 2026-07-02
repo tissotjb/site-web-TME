@@ -107,7 +107,7 @@
 /* Section formation */
 .createur-formation {
     background: linear-gradient(135deg, #F8FBFD, #E3EEF7);
-    padding: 100px 10%;
+    padding: var(--space-lg) 10%;
 }
 
 .createur-formation .formation-content {
@@ -157,7 +157,7 @@
     background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     color: var(--color-blanc);
     text-align: center;
-    padding: 100px 10%;
+    padding: var(--space-lg) 10%;
 }
 
 .createur-contact h2 {
@@ -174,7 +174,7 @@
     background-color: #FFF;
     color: var(--color-primary);
     padding: 15px 30px;
-    border-radius: 50px;
+    border-radius: 10px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;

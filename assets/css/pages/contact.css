@@ -97,7 +97,7 @@ form#contactForm {
     font-size: 1.1rem;
     font-weight: 600;
     border: none;
-    border-radius: 50px;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
     align-self: center;
@@ -105,8 +105,8 @@ form#contactForm {
 
 .btn-submit:hover {
     transform: translateY(-3px) scale(1.03);
-    box-shadow: 0 8px 20px rgba(9, 37, 21, 0.4);
-    background: linear-gradient(90deg, var(--color-secondary) , var(--color-complementaire-2));
+    box-shadow: 0 8px 20px rgba(217, 164, 65, 0.4);
+    background: linear-gradient(90deg, var(--color-secondary) , var(--color-accent));
     color: var(--color-tertiary);
 }
 
@@ -131,5 +131,10 @@ form#contactForm {
 
     .contact-page p {
         font-size: 1rem;
+    }
+
+    /* Sur petit écran, les champs du formulaire Google s'empilent et demandent plus de hauteur */
+    .iframe-container iframe {
+        height: 1700px;
     }
 }

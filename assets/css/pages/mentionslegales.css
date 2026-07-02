@@ -57,7 +57,7 @@
     content: '';
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, var(--color-secondary), var(--color-complementaire-2));
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-primary));
     display: block;
     margin-top: 8px;
     border-radius: 2px;

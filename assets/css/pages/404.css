@@ -87,10 +87,10 @@
 /* Bouton principal */
 .btn-primary {
     display: inline-block;
-    background-color: var(--color-secondary);
-    color: var(--color-tertiary);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-blanc);
     padding: 0.9rem 1.8rem;
-    border-radius: 30px;
+    border-radius: 10px;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -98,9 +98,10 @@
 }
 
 .btn-primary:hover {
-    background-color: #6DA5CC;
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+    color: var(--color-tertiary);
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(151, 193, 225, 0.6);
+    box-shadow: 0 6px 20px rgba(217, 164, 65, 0.4);
 }
 
 /* Suggestions */

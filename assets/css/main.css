@@ -48,6 +48,12 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     --color-complementaire-2: #C2D5BE;
     --color-blanc: #F5F5F5;
     --color-accent: #D9A441;
+
+    /* Échelle d'espacement vertical entre sections */
+    --space-sm: 40px;
+    --space-md: 60px;
+    --space-lg: 80px;
+    --space-xl: 100px;
 }
 
 /* Style généraux */

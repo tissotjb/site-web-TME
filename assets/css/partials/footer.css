@@ -230,7 +230,7 @@ footer h4, footer h5 {
 
 .copyright a:hover {
     text-decoration: underline;
-    color: var(--color-complementaire-2);
+    color: var(--color-accent);
 }
 
 /* RESPONSIVE */

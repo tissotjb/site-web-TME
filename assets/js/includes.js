@@ -72,8 +72,8 @@ function hideLoader() {
 
 // Dès que le DOM est prêt (HTML chargé)
 document.addEventListener("DOMContentLoaded", () => {
-    // Masquer le loader après un petit délai pour fluidité
-    setTimeout(hideLoader, 1500);
+    // Petit délai minimal pour garder l'animation de sortie fluide, sans attente artificielle
+    setTimeout(hideLoader, 300);
 })
 
 //Sécurité : si certaines ressources traînent trop

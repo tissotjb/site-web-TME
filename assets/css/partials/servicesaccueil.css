@@ -101,7 +101,7 @@
     background: linear-gradient(135deg, var(--color-primary) , var(--color-secondary));
     color: var(--color-blanc);
     padding: 12px 28px;
-    border-radius: 30px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -110,11 +110,11 @@
 }
 
 .btn-services:hover {
-    background: linear-gradient(135deg, var(--color-secondary) , var(--color-complementaire-2));
+    background: linear-gradient(135deg, var(--color-secondary) , var(--color-accent));
     transform: translateY(-2px);
     border-color: rgba(255, 255, 255, 0.8);
     color: var(--color-tertiary);
-    box-shadow: 0 10px 25px rgba(0, 120, 215, 0.4);
+    box-shadow: 0 10px 25px rgba(217, 164, 65, 0.4);
 }
 
 /* Responsive tablette */

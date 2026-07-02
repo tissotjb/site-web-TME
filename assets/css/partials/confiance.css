@@ -23,11 +23,10 @@
 .logo-track {
     display: flex;
     align-items: center;
-    justify-content: center; /* A RETIRER POUR L'ANIMATION EN CARROUSSEL */
     gap: 60px;
     margin: 20px 0 20px 0;
-    width: calc(100%); /* AJUSTER EN FONCTION DU NOMBRE DE LOGO */
-    /* animation: defilement 20s linear infinite; */
+    width: max-content;
+    animation: defilement 20s linear infinite;
 }
 
 /* Logos */
@@ -46,11 +45,10 @@
     filter: grayscale(0);
 }
 
-/* Permet de pauser le carrousel au survol d'un logo
-
+/* Permet de pauser le carrousel au survol d'un logo */
 .logo-defil:hover .logo-track{
     animation-play-state: paused;
-} */
+}
 
 /* Animation */
 @keyframes defilement {
@@ -65,23 +63,9 @@
 @media (max-width: 768px) {
     .logo-track {
         gap: 30px;
-        justify-content: center;
-    }
-    .logo-track img {
-        height: 50px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .logo-track {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
     }
 
     .logo-track img {
         height: 50px;
     }
-
 }

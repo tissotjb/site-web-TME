@@ -92,29 +92,30 @@ header.scrolled .btn-devis .cta-header {
 
 /* Bouton devis */
 .btn-devis .cta-header {
-    background: linear-gradient(135deg, var(--color-secondary) , var(--color-complementaire-2));
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     padding: 10px 25px;
-    border-radius: 30px;
-    color: var(--color-tertiary);
+    border-radius: 10px;
+    color: var(--color-blanc);
     font-weight: 600;
     text-align: center;
     transition: all 0.3s ease;
 }
 
 .btn-devis .cta-header:hover {
-    background: linear-gradient(90deg, var(--color-tertiary), var(--color-secondary));
-    color: var(--color-blanc);
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-accent));
+    color: var(--color-tertiary);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 168, 232, 0.4);
+    box-shadow: 0 5px 15px rgba(217, 164, 65, 0.4);
 }
 
 /* RESPONSIVE */
-@media (max-width: 992px) {
-    /* Masquer bouton*/
-    .btn-devis {
-        display: none;
-    }
 
+/* Lien "Me contacter" ajouté au menu burger : masqué tant que le menu burger n'existe pas */
+.nav-contact-mobile {
+    display: none;
+}
+
+@media (max-width: 992px) {
     /* Logo visible à droite */
     .header-container .logo {
         display: block;
@@ -130,6 +131,13 @@ header.scrolled .btn-devis .cta-header {
     /* Navigation centrée et adaptative */
     .navigation ul {
         gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Masquer bouton : à partir de ce seuil, le menu burger prend le relai */
+    .btn-devis {
+        display: none;
     }
 }
 
@@ -207,6 +215,13 @@ header.scrolled .btn-devis .cta-header {
     /* Séparation visuelle discrete entre lignes */
     .navigation ul li:not(:last-child) a {
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* Lien "Me contacter", visible uniquement dans le menu burger (le bouton .btn-devis est masqué à ce seuil) */
+    .nav-contact-mobile {
+        display: block;
+        color: var(--color-accent);
+        font-weight: 600;
     }
 
     /* Burger icon */
