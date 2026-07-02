@@ -1,18 +1,9 @@
-/*
-Liste des couleurs de la charte graphique
-Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
-Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
-Tertiaire : #2E2E2E         - Texte principal
-Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
-Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
-Blanc : #F5F5F5             - Fond principaux (section alternée)
-Accent chaud : #D9A441      - Survol des liens et boutons primaires
-*/
+/* Palette de couleurs : voir les variables CSS dans assets/css/main.css (:root) */
 
 header {
     width: 100%;
-    background-color: #2E4A66;
-    color: #F5F5F5;
+    background-color: var(--color-primary);
+    color: var(--color-blanc);
     position: fixed;
     top: 0;
     left: 0;
@@ -25,7 +16,7 @@ header {
 .index header {
     width: 100%;
     background: none;
-    color: #F5F5F5;
+    color: var(--color-blanc);
     position: fixed;
     top: 0;
     left: 0;
@@ -38,7 +29,7 @@ header {
 /* Header au scroll */
 header.scrolled {
     padding: 5px 5%; /* Header plus petit */
-    background-color: #002244;
+    background-color: var(--color-primary-dark);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
@@ -90,29 +81,29 @@ header.scrolled .btn-devis .cta-header {
 
 .navigation ul a {
     text-decoration: none;
-    color: #F5F5F5;
+    color: var(--color-blanc);
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .navigation ul a:hover {
-    color: #97C1E1;
+    color: var(--color-secondary);
 }
 
 /* Bouton devis */
 .btn-devis .cta-header {
-    background: linear-gradient(135deg, #97C1E1 , #C2D5BE);
+    background: linear-gradient(135deg, var(--color-secondary) , var(--color-complementaire-2));
     padding: 10px 25px;
     border-radius: 30px;
-    color: #2E2E2E;
+    color: var(--color-tertiary);
     font-weight: 600;
     text-align: center;
     transition: all 0.3s ease;
 }
 
 .btn-devis .cta-header:hover {
-    background: linear-gradient(90deg, #2E2E2E, #97C1E1);
-    color: #F5F5F5;
+    background: linear-gradient(90deg, var(--color-tertiary), var(--color-secondary));
+    color: var(--color-blanc);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 168, 232, 0.4);
 }
@@ -198,7 +189,7 @@ header.scrolled .btn-devis .cta-header {
         font-weight: 500;
         letter-spacing: 0.3px;
 
-        color: #F5F5F5;
+        color: var(--color-blanc);
         text-decoration: none;
 
         transition: 
@@ -209,7 +200,7 @@ header.scrolled .btn-devis .cta-header {
 
     .navigation ul a:hover {
         background: rgba(151, 193, 225, 0.15);
-        color: #97C1E1;
+        color: var(--color-secondary);
         transform: translateX(4px);
     }
 
@@ -228,7 +219,7 @@ header.scrolled .btn-devis .cta-header {
     }
 
     .burger span {
-        background-color: #F5F5F5;
+        background-color: var(--color-blanc);
         display: block;
         height: 4px;
         margin: 4px 0;
@@ -240,7 +231,7 @@ header.scrolled .btn-devis .cta-header {
     }
 
     .burger.active span {
-        background-color: #97C1E1;
+        background-color: var(--color-secondary);
     }
 
     .burger.active span:nth-child(1) {

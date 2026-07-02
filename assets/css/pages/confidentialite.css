@@ -1,13 +1,4 @@
-/*
-Liste des couleurs de la charte graphique
-Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
-Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
-Tertiaire : #2E2E2E         - Texte principal
-Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
-Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
-Blanc : #F5F5F5             - Fond principaux (section alternée)
-Accent chaud : #D9A441      - Survol des liens et boutons primaires
-*/
+/* Palette de couleurs : voir les variables CSS dans assets/css/main.css (:root) */
 
 /* ===========================
    Page Confidentialité & RGPD
@@ -16,7 +7,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     max-width: 1100px;
     margin: 0 auto;
     padding: 80px 20px 120px;
-    color: #2E2E2E;
+    color: var(--color-tertiary);
     line-height: 1.7;
 }
 
@@ -32,7 +23,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 
 .privacy-header h1 {
     font-size: 2rem;
-    color: #002244;
+    color: var(--color-primary-dark);
     margin-bottom: 8px;
 }
 
@@ -53,7 +44,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 
 .privacy-content h2, 
 .privacy-content h3 {
-    color: #002244;
+    color: var(--color-primary-dark);
     margin-top: 40px;
     margin-bottom: 15px;
 }
@@ -75,7 +66,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 
 .privacy-action h2 {
     font-size: 2rem;
-    color: #002244;
+    color: var(--color-primary-dark);
     margin-bottom: 20px;
 }
 
@@ -85,7 +76,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 }
 
 .btn-action {
-    background: linear-gradient(135deg, #97C1E1, #C2D5BE);
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-complementaire-2));
     color: #fff;
     padding: 12px 25px;
     border-radius: 30px;

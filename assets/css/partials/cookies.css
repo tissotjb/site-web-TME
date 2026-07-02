@@ -1,21 +1,12 @@
-/*
-Liste des couleurs de la charte graphique
-Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
-Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
-Tertiaire : #2E2E2E         - Texte principal
-Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
-Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
-Blanc : #F5F5F5             - Fond principaux (section alternée)
-Accent chaud : #D9A441      - Survol des liens et boutons primaires
-*/
+/* Palette de couleurs : voir les variables CSS dans assets/css/main.css (:root) */
 
 .cookie-banner {
     position: fixed;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #5C7340;
-    color: #F5F5F5;
+    background-color: var(--color-complementaire-1);
+    color: var(--color-blanc);
     padding: 15px 25px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
@@ -29,7 +20,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 }
 
 .cookie-banner a {
-    color: #C2D5BE;
+    color: var(--color-complementaire-2);
     text-decoration: underline;
 }
 
@@ -47,18 +38,18 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 }
 
 .btn-accept:hover, .btn-reject:hover {
-    background-color: #D9A441;
-    color: #2E2E2E;
+    background-color: var(--color-accent);
+    color: var(--color-tertiary);
 }
 
 .btn-accept {
-    background-color: #C2D5BE;
-    color: #2E2E2E;
+    background-color: var(--color-complementaire-2);
+    color: var(--color-tertiary);
 }
 
 .btn-reject {
-    background-color: #2E4A66;
-    color: #F5F5F5;
+    background-color: var(--color-primary);
+    color: var(--color-blanc);
 }
 
 .cookie-banner.hidden {

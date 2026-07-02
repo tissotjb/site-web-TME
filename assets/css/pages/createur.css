@@ -1,13 +1,4 @@
-/*
-Liste des couleurs de la charte graphique
-Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
-Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
-Tertiaire : #2E2E2E         - Texte principal
-Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
-Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
-Blanc : #F5F5F5             - Fond principaux (section alternée)
-Accent chaud : #D9A441      - Survol des liens et boutons primaires
-*/
+/* Palette de couleurs : voir les variables CSS dans assets/css/main.css (:root) */
 
 /* Section présentation personnelle */
 .createur-intro {
@@ -31,22 +22,22 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     max-width: 600px;
 }
 
-.createur-intro h2 {
+.createur-intro h1 {
     font-size: 2rem;
-    color: #2E4A66;
+    color: var(--color-primary);
     margin-bottom: 10px;
 }
 
-.createur-intro h3 {
+.createur-intro h2 {
     font-weight: 500;
-    color: #97C1E1;
+    color: var(--color-secondary);
     margin-bottom: 20px;
 }
 
 .createur-intro p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #2E2E2E;
+    color: var(--color-tertiary);
 }
 
 /* ----- SECTION EXPERIENCES ----- */
@@ -60,7 +51,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 
 .createur-experiences {
     font-size: 2rem;
-    color: #2E4A66;
+    color: var(--color-primary);
     text-align: center;
     margin-bottom: 40px;
     position: relative;
@@ -74,7 +65,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background: #2E4A66;
+    background: var(--color-primary);
     border-radius: 2px;
 }
 
@@ -97,8 +88,8 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 }
 
 .createur-experiences thead {
-    background: #2E4A66;
-    color: #F5F5F5;
+    background: var(--color-primary);
+    color: var(--color-blanc);
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -134,18 +125,18 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 
 .formation-text h2 {
     font-size: 2rem;
-    color: #2E4A66;
+    color: var(--color-primary);
     margin-bottom: 10px;
 }
 
 .formation-text h3 {
     font-size: 1.3rem;
-    color: #97C1E1;
+    color: var(--color-secondary);
     margin-bottom: 20px;
 }
 
 .formation-text p {
-    color: #2E2E2E;
+    color: var(--color-tertiary);
     line-height: 1.6;
     margin-bottom: 15px;
 }
@@ -163,8 +154,8 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 
 /* Section contact / appel à l'action */
 .createur-contact {
-    background: linear-gradient(135deg, #2E4A66, #97C1E1);
-    color: #F5F5F5;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-blanc);
     text-align: center;
     padding: 100px 10%;
 }
@@ -181,7 +172,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 
 .btn-contact {
     background-color: #FFF;
-    color: #2E4A66;
+    color: var(--color-primary);
     padding: 15px 30px;
     border-radius: 50px;
     font-weight: 600;
@@ -239,7 +230,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     .createur-experiences {
         content: attr(data-label);
         font-weight: bold;
-        color: #2E4A66;
+        color: var(--color-primary);
         display: block;
         margin-bottom: 4px;
     }

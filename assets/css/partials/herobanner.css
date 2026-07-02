@@ -1,18 +1,9 @@
-/*
-Liste des couleurs de la charte graphique
-Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
-Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
-Tertiaire : #2E2E2E         - Texte principal
-Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
-Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
-Blanc : #F5F5F5             - Fond principaux (section alternée)
-Accent chaud : #D9A441      - Survol des liens et boutons primaires
-*/
+/* Palette de couleurs : voir les variables CSS dans assets/css/main.css (:root) */
 
 .hero-banner {
     position: relative;
     height: 100vh;                  /*plein écran */
-    background-image: url(../../medias/images/batiment.jpg);
+    background-image: url(../../medias/images/batiment.webp);
     background-size: cover;         /* l'image couvre toute la zone */
     background-position: center;    /* centrée sur l'écran */
     background-repeat: no-repeat;
@@ -65,7 +56,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 /* ===== SOUS-TITRE ===== */
 .hero-content p {
     font-size: 1.3rem;
-    color: #F5F5F5;
+    color: var(--color-blanc);
     margin-bottom: 2rem;
     line-height: 1.6;
 }
@@ -76,8 +67,8 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     padding: 14px 32px;
     font-size: 1.1rem;
     font-weight: 600;
-    color: #F5F5F5;
-    background: linear-gradient(135deg, #2E4A66 , #97C1E1);
+    color: var(--color-blanc);
+    background: linear-gradient(135deg, var(--color-primary) , var(--color-secondary));
     border: none;
     border-radius: 50px;
     text-decoration: none;
@@ -86,9 +77,9 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 }
 
 .btn-hero:hover {
-    background: linear-gradient(135deg, #97C1E1 , #C2D5BE);
+    background: linear-gradient(135deg, var(--color-secondary) , var(--color-complementaire-2));
     transform: translateY(-3px);
-    color: #2E2E2E;
+    color: var(--color-tertiary);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 

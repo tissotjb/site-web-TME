@@ -1,21 +1,12 @@
-/*
-Liste des couleurs de la charte graphique
-Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
-Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
-Tertiaire : #2E2E2E         - Texte principal
-Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
-Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
-Blanc : #F5F5F5             - Fond principaux (section alternée)
-Accent chaud : #D9A441      - Survol des liens et boutons primaires
-*/
+/* Palette de couleurs : voir les variables CSS dans assets/css/main.css (:root) */
 
 .error-404 {
     min-height: 100vh;
-    background: linear-gradient(135deg, #2E2E2E, #2E4A66);
+    background: linear-gradient(135deg, var(--color-tertiary), var(--color-primary));
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #F5F5F5;
+    color: var(--color-blanc);
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -69,7 +60,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     font-size: 8rem;
     margin: 0;
     font-weight: 700;
-    color: #97C1E1;
+    color: var(--color-secondary);
     text-shadow: 0 0 15px rgba(151, 193, 225, 0.5);
     animation: glow 2.5s ease-in-out infinite alternate;
 }
@@ -83,7 +74,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 .container-404 h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: #F5F5F5;
+    color: var(--color-blanc);
 }
 
 /* Paragraphe descriptif */
@@ -96,8 +87,8 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 /* Bouton principal */
 .btn-primary {
     display: inline-block;
-    background-color: #97C1E1;
-    color: #2E2E2E;
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary);
     padding: 0.9rem 1.8rem;
     border-radius: 30px;
     font-weight: 600;
@@ -133,13 +124,13 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 }
 
 .suggestions a {
-    color: #97C1E1;
+    color: var(--color-secondary);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .suggestions a:hover {
-    color: #F5F5F5;
+    color: var(--color-blanc);
     text-decoration: underline;
 }
 

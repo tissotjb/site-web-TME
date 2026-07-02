@@ -38,6 +38,18 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 @import url('pages/portfolio.css');
 @import url('pages/services.css');
 
+/* Variables CSS de la charte graphique, utilisées dans tous les fichiers du dossier assets/css */
+:root {
+    --color-primary: #2E4A66;
+    --color-primary-dark: #002244;
+    --color-secondary: #97C1E1;
+    --color-tertiary: #2E2E2E;
+    --color-complementaire-1: #5C7340;
+    --color-complementaire-2: #C2D5BE;
+    --color-blanc: #F5F5F5;
+    --color-accent: #D9A441;
+}
+
 /* Style généraux */
 
 body {

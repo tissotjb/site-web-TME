@@ -12,8 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="3snatfuXLsFtclYtWI2vQVAudMIhI6UjrbIEPsFwVy8" />
-    <meta name="description" content="TME - Tissot Métrés & Economie à Fonsorbes (31).
-    Métrés Tous Corps d'Etats, Estimation, Vérification."/>
+    <meta name="description" content="TME - Tissot Métrés & Economie : métreur et économiste de la construction indépendant à Fonsorbes, intervenant sur tout le Bassin Toulousain (Haute-Garonne, Gers, Tarn-et-Garonne, Tarn).">
     <title>TME - Tissot Métrés & Economie - Métrés et Vérifications</title>
 
     <!--Chargement de l'icone-->
@@ -25,8 +24,20 @@
     <!-- Déclaration du sitemap -->
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
-    <!--Balise canonique pour spécifier que index.html est la page principale-->
-    <link rel="canonique" href="https://tissot-tme.fr/index.html">
+    <!--Balise canonique pour spécifier l'URL de référence de cette page-->
+    <link rel="canonical" href="https://tissot-tme.fr/index.html">
+
+    <!-- Balises Open Graph / Twitter Card pour le partage sur réseaux sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TME - Tissot Métrés & Economie - Métrés et Vérifications">
+    <meta property="og:description" content="Métreur et économiste de la construction indépendant à Fonsorbes, intervenant sur tout le Bassin Toulousain.">
+    <meta property="og:image" content="https://tissot-tme.fr/assets/medias/logo/Logo%20Negatif.png">
+    <meta property="og:url" content="https://tissot-tme.fr/index.html">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TME - Tissot Métrés & Economie - Métrés et Vérifications">
+    <meta name="twitter:description" content="Métreur et économiste de la construction indépendant à Fonsorbes, intervenant sur tout le Bassin Toulousain.">
+    <meta name="twitter:image" content="https://tissot-tme.fr/assets/medias/logo/Logo%20Negatif.png">
 
     <!-- Données structurées pour référencement Google -->
     <script type="application/ld+json">
@@ -34,11 +45,12 @@
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": "Organization",
+                "@type": "LocalBusiness",
                 "name": "TME - Tissot Métrés & Économie",
                 "url": "https://tissot-tme.fr",
-                "logo": "https://tissotjb.github.io/site-web-TME/assets/medias/logo/Logo%20Negatif.png",
-                "description": "TME - Tissot Métrés & Économie propose des prestations de métrés, estimations, et vérifications de devis pour les professionnels du bâtiment.",
+                "logo": "https://tissot-tme.fr/assets/medias/logo/Logo%20Negatif.png",
+                "image": "https://tissot-tme.fr/assets/medias/logo/Logo%20Negatif.png",
+                "description": "TME - Tissot Métrés & Économie propose des prestations de métrés, estimations, et vérifications de devis pour les professionnels du bâtiment dans le Bassin Toulousain.",
                 "email": "tissot.tme@gmail.com",
                 "telephone": "+33 6 59 41 38 79",
                 "address": {
@@ -48,6 +60,12 @@
                     "addressLocality": "Fonsorbes",
                     "addressCountry": "FR"
                 },
+                "areaServed": [
+                    { "@type": "AdministrativeArea", "name": "Haute-Garonne" },
+                    { "@type": "AdministrativeArea", "name": "Gers" },
+                    { "@type": "AdministrativeArea", "name": "Tarn-et-Garonne" },
+                    { "@type": "AdministrativeArea", "name": "Tarn" }
+                ],
                 "sameAs": [
                     "https://www.linkedin.com/company/tme-tissot-m%C3%A9tr%C3%A9s-economie/"
                 ]
@@ -58,7 +76,7 @@
                 "name": "TME - Tissot Métrés & Économie",
                 "potentialAction": {
                     "@type": "SearchAction",
-                    "target": "https://tissotjb.github.io/site-web-TME/?q={search_term_string}",
+                    "target": "https://tissot-tme.fr/?q={search_term_string}",
                     "query-input": "required name=search_term_string"
                 }
             }
@@ -90,7 +108,7 @@
                     <h2>Présentation de TME</h2>
                     <p><strong>TME - Tissot Métrés & Economie</strong> est une entreprise individuelle spécialisée dans les <strong>métrés gros oeuvre, TCE, l'estimation de projet et l'Economie de la Construction</strong></p>
                     
-                    <p>Basée à proximité de Toulouse, j'accompagne les professionnels du bâtiment dans la maîtrise des coûts et la fiabilité des estimations.</p>
+                    <p>Basée à Fonsorbes, à proximité de Toulouse, j'interviens sur tout le Bassin Toulousain (Haute-Garonne, Gers, Tarn-et-Garonne, Tarn) pour accompagner les professionnels du bâtiment dans la maîtrise des coûts et la fiabilité des estimations.</p>
 
                     <p>Mes prestations couvrent:
                         <ul>
@@ -143,7 +161,7 @@
             <div class="services-grid">
 
                 <div class="service-item">
-                    <img src="assets/medias/images/batiment.jpg" alt="Métrés GO et TCE">
+                    <img src="assets/medias/images/batiment.webp" alt="Métrés GO et TCE" loading="lazy">
                     <div class="service-overlay">
                         <h3>Métrés GO & TCE</h3>
                         <p>Réalisation de métrés précis et détaillés pour le Gros Oeuvre et Tous Corps d'Etats</p>
@@ -151,7 +169,7 @@
                 </div>
 
                 <div class="service-item">
-                    <img src="assets/medias/images/estimation.jpg" alt="Estimation de projet">
+                    <img src="assets/medias/images/estimation.webp" alt="Estimation de projet" loading="lazy">
                     <div class="service-overlay">
                         <h3>Estimation et chiffrage de projet</h3>
                         <p>Chiffrage de projet, par lot ou TCE</p>
@@ -159,7 +177,7 @@
                 </div>
 
                 <div class="service-item">
-                    <img src="assets/medias/images/maquette.jpg" alt="Modélisation structure">
+                    <img src="assets/medias/images/maquette.jpg" alt="Modélisation structure" loading="lazy">
                     <div class="service-overlay">
                         <h3>Modélisation de structure bâtiment</h3>
                         <p>Réalisation de maquette numérique LOD 100 à 300</p>
@@ -167,7 +185,7 @@
                 </div>
 
                 <div class="service-item">
-                    <img src="assets/medias/images/verif.jpg" alt="Vérification / Comparaison de devis">
+                    <img src="assets/medias/images/verif.webp" alt="Vérification / Comparaison de devis" loading="lazy">
                     <div class="service-overlay">
                         <h3>Economie de la Construction sans DET</h3>
                         <p>Maîtrise des coûts et accompagnement économique du projet, hors suivi de chantier</p>
@@ -190,7 +208,7 @@
                 
                 <div class="project">
                     <div class="project-image">
-                        <img src="assets/medias/portfolio/BassieresDeBas.png" alt="Bassières de Bas">
+                        <img src="assets/medias/portfolio/BassieresDeBas.webp" alt="Bassières de Bas" loading="lazy">
                     </div>
                     <div class="overlay">
                         <h4>Construction de 27 logements à Lombez</h4>
@@ -201,7 +219,7 @@
 
                 <div class="project">
                     <div class="project-image">
-                        <img src="assets/medias/portfolio/LesAigrettes.png" alt="Les Aigrettes">
+                        <img src="assets/medias/portfolio/LesAigrettes.webp" alt="Les Aigrettes" loading="lazy">
                     </div>
                     <div class="overlay">
                         <h4>Construction de 15 logements à Saint Nicolas de la Grave</h4>
@@ -212,7 +230,7 @@
 
                 <div class="project">
                     <div class="project-image">
-                        <img src="assets/medias/portfolio/GendarmeriesTG.png" alt="Gendarmeries Tarn & Garonne">
+                        <img src="assets/medias/portfolio/GendarmeriesTG.webp" alt="Gendarmeries Tarn & Garonne" loading="lazy">
                     </div>
                     <div class="overlay">
                         <h4>Rénovations des gendarmeries du Tarn & Garonne</h4>
@@ -241,8 +259,8 @@
 
     <div data-include="partials/footer.html"></div>
 
-    <script src="assets/js/includes.js"></script>
+    <script src="assets/js/includes.js" defer></script>
     <!-- <script src="assets/js/cookies.js"></script> -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>

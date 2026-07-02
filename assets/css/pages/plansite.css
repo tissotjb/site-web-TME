@@ -1,20 +1,11 @@
-/*
-Liste des couleurs de la charte graphique
-Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
-Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
-Tertiaire : #2E2E2E         - Texte principal
-Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
-Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
-Blanc : #F5F5F5             - Fond principaux (section alternée)
-Accent chaud : #D9A441      - Survol des liens et boutons primaires
-*/
+/* Palette de couleurs : voir les variables CSS dans assets/css/main.css (:root) */
 
 /* =============================
     PAGE PLAN DU SITE
 ================================ */
 main.plan-site {
     background-color: #F5F7FA;
-    color: #2E4A66;
+    color: var(--color-primary);
     padding: 120px 8% 80px;
 }
 
@@ -26,12 +17,12 @@ main.plan-site {
 
 .plan-intro h1 {
     font-size: 2.5rem;
-    color: #2E4A66;
+    color: var(--color-primary);
     margin-bottom: 10px;
 }
 
 .plan-intro p {
-    color: #2E2E2E;
+    color: var(--color-tertiary);
     font-size: 1.1rem;
 }
 
@@ -70,14 +61,14 @@ main.plan-site {
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
-    color: #2E4A66;
+    color: var(--color-primary);
     padding: 10px 16px;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 
 .plan-containerul a:hover {
-    background: linear-gradient(135deg, #97C1E1, #C2D58E);
+    background: linear-gradient(135deg, var(--color-secondary), #C2D58E);
     color: #FFF;
     transform: translateX(6px);
 }
@@ -109,7 +100,7 @@ main.plan-site {
     text-align: center;
     margin-top: 100px;
     padding: 80px 8%;
-    background: linear-gradient(135deg, #2E4A66, #1F3B53);
+    background: linear-gradient(135deg, var(--color-primary), #1F3B53);
     border-radius: 20px;
     color: #FFF;
 }
@@ -127,7 +118,7 @@ main.plan-site {
 .btn-plan {
     display: inline-block;
     padding: 14px 30px;
-    background: linear-gradient(135deg, #97C1E1, #C2D58E);
+    background: linear-gradient(135deg, var(--color-secondary), #C2D58E);
     border-radius: 30px;
     text-decoration: none;
     color: #FFF;

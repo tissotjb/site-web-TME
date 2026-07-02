@@ -11,13 +11,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TME - Tissot Métrés & Economie</title>
+    <meta name="description" content="Découvrez TME - Tissot Métrés & Economie : genèse du projet, valeurs et coordonnées d'un cabinet indépendant de métrés basé à Fonsorbes, près de Toulouse.">
+    <title>Présentation de l'entreprise - TME - Tissot Métrés & Economie</title>
 
-    <!--Balise canonique pour spécifier que index.html est la page principale-->
-    <link rel="canonique" href="https://tissot-tme.fr/index.html">
-    
+    <!--Balise canonique pour spécifier l'URL de référence de cette page-->
+    <link rel="canonical" href="https://tissot-tme.fr/about.html">
+
     <!--Lien vers les feuilles de style -->
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Balises Open Graph / Twitter Card pour le partage sur réseaux sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Présentation de l'entreprise - TME - Tissot Métrés & Economie">
+    <meta property="og:description" content="Genèse du projet, valeurs et coordonnées d'un cabinet indépendant de métrés basé à Fonsorbes, près de Toulouse.">
+    <meta property="og:image" content="https://tissot-tme.fr/assets/medias/logo/Logo%20Negatif.png">
+    <meta property="og:url" content="https://tissot-tme.fr/about.html">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Présentation de l'entreprise - TME - Tissot Métrés & Economie">
+    <meta name="twitter:description" content="Genèse du projet, valeurs et coordonnées d'un cabinet indépendant de métrés basé à Fonsorbes, près de Toulouse.">
+    <meta name="twitter:image" content="https://tissot-tme.fr/assets/medias/logo/Logo%20Negatif.png">
 
     <!-- Données structurées pour référencement Google-->
     <script type="application/ld+json">
@@ -25,9 +38,9 @@
     "@context": "https://schema.org",
     "@type": "AboutPage",
     "name": "Présentation de l'entreprise TME",
-    "url": "https://tissotjb.github.io/site-web-TME/about.html",
+    "url": "https://tissot-tme.fr/about.html",
     "mainEntity": {
-        "@type": "Organization",
+        "@type": "LocalBusiness",
         "name": "TME - Tissot Métrés & Économie",
         "founder": {
         "@type": "Person",
@@ -43,6 +56,7 @@
         "addressLocality": "Fonsorbes",
         "addressCountry": "FR"
         },
+        "areaServed": ["Haute-Garonne", "Gers", "Tarn-et-Garonne", "Tarn"],
         "email": "tissot.tme@gmail.com",
         "telephone": "+33 6 59 41 38 79"
     }
@@ -55,6 +69,8 @@
     <div data-include="partials/header.html"></div>
 
     <main class="about-page">
+
+        <h1 class="titre-page">Présentation de l'entreprise TME</h1>
 
         <!-- Section 1 : Génèse du projet -->
         <section class="about-genese scroll-reveal">
@@ -162,7 +178,7 @@
 
     <div data-include="partials/footer.html"></div>
 
-    <script src="assets/js/includes.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/includes.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>

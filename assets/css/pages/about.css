@@ -1,20 +1,11 @@
-/*
-Liste des couleurs de la charte graphique
-Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
-Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
-Tertiaire : #2E2E2E         - Texte principal
-Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
-Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
-Blanc : #F5F5F5             - Fond principaux (section alternée)
-Accent chaud : #D9A441      - Survol des liens et boutons primaires
-*/
+/* Palette de couleurs : voir les variables CSS dans assets/css/main.css (:root) */
 
 /* ================================
    STYLE GÉNÉRAL DE LA PAGE ABOUT
 ================================ */
 main.about-page {
     background-color: #F5F7FA;
-    color: #2E4A66;
+    color: var(--color-primary);
     overflow-x: hidden;
 }
 
@@ -47,7 +38,7 @@ main.about-page {
 .about-page h2 {
     text-align: center;
     font-size: 2.2rem;
-    color: #2E4A66;
+    color: var(--color-primary);
     margin-bottom: 40px;
     position: relative;
 }
@@ -57,7 +48,7 @@ main.about-page {
     display: block;
     width: 60px;
     height: 3px;
-    background: linear-gradient(90deg, #97C1E1, #C2D5BE);
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-complementaire-2));
     margin: 20px auto 0;
     border-radius: 2px;
 }
@@ -103,7 +94,7 @@ main.about-page {
 
 .about-chiffres .chiffre-item h3 {
     font-size: 2.5rem;
-    color: #2E4A66;
+    color: var(--color-primary);
     margin-bottom: 10px;
 }
 
@@ -117,7 +108,7 @@ main.about-page {
    SECTION CONTACT / MAP
 ========================== */
 .about-contact {
-    background: linear-gradient(135deg, #97C1E1, #C2D5BE);
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-complementaire-2));
     color: #fff;
 }
 
@@ -140,7 +131,7 @@ main.about-page {
 }
 
 .contact-container strong {
-    color: #2E4A66;
+    color: var(--color-primary);
 }
 
 .contact-container .map {
@@ -174,8 +165,8 @@ main.about-page {
 }
 
 .about-card {
-    background: linear-gradient(135deg, #2E4A66, #1F3B53);
-    color: #F5F5F5;
+    background: linear-gradient(135deg, var(--color-primary), #1F3B53);
+    color: var(--color-blanc);
     text-decoration: none;
     border-radius: 20px;
     padding: 30px 25px;
@@ -185,12 +176,12 @@ main.about-page {
 }
 
 .about-card p {
-    color: #F5F5F5;
+    color: var(--color-blanc);
     text-align: center;
 }
 
 .about-card:hover {
-    background: linear-gradient(135deg, #97C1E1, #C2D5BE);
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-complementaire-2));
     color: #fff;
     transform: translateY(-6px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
@@ -200,7 +191,7 @@ main.about-page {
    SECTION APPEL À L'ACTION
 ========================== */
 .about-action {
-    background: linear-gradient(135deg, #2E4A66, #1F3B53);
+    background: linear-gradient(135deg, var(--color-primary), #1F3B53);
     color: #fff;
     text-align: center;
     border-radius: 25px;
@@ -214,12 +205,12 @@ main.about-page {
 
 .about-action p {
     margin-bottom: 30px;
-    color: #2E2E2E;
+    color: var(--color-tertiary);
 }
 
 .btn-action {
     display: inline-block;
-    background: linear-gradient(135deg, #97C1E1, #C2D5BE);
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-complementaire-2));
     color: #fff;
     text-decoration: none;
     padding: 14px 35px;

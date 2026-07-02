@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("portfolio-container");
-
   fetch("data/portfolio.json")
     .then(response => {
       if (!response.ok) throw new Error("Erreur de chargement du JSON");
@@ -14,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         card.innerHTML = `
           <div class="card-image">
-            <img src="${projet.image}" alt="${projet.titre}">
+            <img src="${projet.image}" alt="${projet.titre}" loading="lazy">
           </div>
           <div class="card-content">
             <h3>${projet.titre}</h3>
@@ -45,7 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     })
     .catch(error => {
-      container.innerHTML = `<p class="error">Impossible de charger les projets 😕</p>`;
+      document.querySelectorAll(".portfolio-grid").forEach(grid => {
+        grid.innerHTML = `<p class="error">Impossible de charger les projets 😕</p>`;
+      });
       console.error(error);
     });
   
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function openModal(projet) {
     modalBody.innerHTML = `
     <h2>${projet.titre}</h2>
-    <img src="${projet.image}" alt="{projet.titre}" style="width:100%; margin-bottom:1rem;">
+    <img src="${projet.image}" alt="${projet.titre}" style="width:100%; margin-bottom:1rem;">
     <p><strong>Description :</strong> ${projet.description}</p>
     <p><strong>Adresse :</strong> ${projet.adresse}</p>
     <p><strong>Surface :</strong> ${projet.surface}</p>

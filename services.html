@@ -11,13 +11,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Métrés GO/TCE, estimation et chiffrage de projet, modélisation de structure et économie de la construction : découvrez les services de TME dans le Bassin Toulousain.">
     <title>Services - Tissot Métrés & Economie</title>
 
-    <!--Balise canonique pour spécifier que index.html est la page principale-->
-    <link rel="canonique" href="https://tissot-tme.fr/index.html">
-    
+    <!--Balise canonique pour spécifier l'URL de référence de cette page-->
+    <link rel="canonical" href="https://tissot-tme.fr/services.html">
+
     <!--Lien vers les feuilles de style -->
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Balises Open Graph / Twitter Card pour le partage sur réseaux sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Services - Tissot Métrés & Economie">
+    <meta property="og:description" content="Métrés, estimation, modélisation et économie de la construction dans le Bassin Toulousain.">
+    <meta property="og:image" content="https://tissot-tme.fr/assets/medias/logo/Logo%20Negatif.png">
+    <meta property="og:url" content="https://tissot-tme.fr/services.html">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Services - Tissot Métrés & Economie">
+    <meta name="twitter:description" content="Métrés, estimation, modélisation et économie de la construction dans le Bassin Toulousain.">
+    <meta name="twitter:image" content="https://tissot-tme.fr/assets/medias/logo/Logo%20Negatif.png">
 
     <!-- Données structurées pour référencement Google-->
     <script type="application/ld+json">
@@ -26,11 +39,11 @@
     "@type": "Service",
     "serviceType": "Métrés, estimations et vérifications de devis",
     "provider": {
-        "@type": "Organization",
+        "@type": "LocalBusiness",
         "name": "TME - Tissot Métrés & Économie",
-        "url": "https://tissotjb.github.io/site-web-TME"
+        "url": "https://tissot-tme.fr"
     },
-    "areaServed": "France",
+    "areaServed": ["Haute-Garonne", "Gers", "Tarn-et-Garonne", "Tarn"],
     "description": "Prestations de métrés tous corps d'état, estimations financières de projets, et vérification de devis pour les professionnels du bâtiment.",
     "offers": {
         "@type": "Offer",
@@ -50,10 +63,12 @@
             <h1>Mes Services</h1>
             <p class="intro">Découvrez comment TME peut vous accompagner dans vos projets</p>
 
+            <h2>Détail de mes prestations</h2>
+
             <div class="services-list">
 
                 <div class="service-card left">
-                    <div class="service-bg" style="background-image: url('assets/medias/images/batiment.jpg')"></div>
+                    <div class="service-bg service-bg--batiment"></div>
                     <div class="service-content">
                         <h3>Métrés GO et Tous Corps d'Etat</h3>
                         <p>Réalisation de métrés précis sur les lots de votre choix, pour tous types de projets</p>
@@ -63,7 +78,7 @@
 
 
                 <div class="service-card right">
-                    <div class="service-bg" style="background-image: url('assets/medias/images/estimation.jpg')"></div>
+                    <div class="service-bg service-bg--estimation"></div>
                     <div class="service-content">
                         <h3>Estimation et chiffrage de projet</h3>
                         <p>Evaluation détaillée des coûts par lot ou TCE sur la base de vos documents</p>
@@ -73,16 +88,16 @@
                 </div>
 
                 <div class="service-card left">
-                    <div class="service-bg" style="background-image: url('assets/medias/images/maquette.jpg')"></div>
+                    <div class="service-bg service-bg--maquette"></div>
                     <div class="service-content">
-                        <h3>Modélisation REVIT des structure</h3>
-                        <p>Réalisation d'une maquette numérique de structure de vos projet</p>
+                        <h3>Modélisation REVIT des structures</h3>
+                        <p>Réalisation d'une maquette numérique de structure de vos projets</p>
                         <p>LOD 100 à 300 </p>
                     </div>
                 </div>
 
                 <div class="service-card right">
-                    <div class="service-bg" style="background-image: url('assets/medias/images/verif.jpg')"></div>
+                    <div class="service-bg service-bg--verif"></div>
                     <div class="service-content">
                         <h3>Economie de la Construction sans DET</h3>
                         <p>Estimation ESQ / APS / APD / PRO</p>
@@ -108,7 +123,7 @@
 
     <div data-include="partials/footer.html"></div>
 
-    <script src="assets/js/includes.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/includes.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>

@@ -1,13 +1,4 @@
-/*
-Liste des couleurs de la charte graphique
-Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
-Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
-Tertiaire : #2E2E2E         - Texte principal
-Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
-Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
-Blanc : #F5F5F5             - Fond principaux (section alternée)
-Accent chaud : #D9A441      - Survol des liens et boutons primaires
-*/
+/* Palette de couleurs : voir les variables CSS dans assets/css/main.css (:root) */
 
 /* ===== LOADER MODERNE TME ===== */
 
@@ -17,7 +8,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle at center, #2e4a66 0%, #2E2E2E 100%);
+    background: radial-gradient(circle at center, var(--color-primary) 0%, var(--color-tertiary) 100%);
     z-index: 9999;
     transition: opacity 0.8s ease, visibility 0.8s ease;
 }
@@ -43,7 +34,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #f5f5f5;
+    color: var(--color-blanc);
     animation: fadeIn 1s ease forwards;
 }
 
@@ -72,7 +63,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     display: block;
     height: 100%;
     width: 0%;
-    background: linear-gradient(90deg, #97C1E1, #6DA5CC);
+    background: linear-gradient(90deg, var(--color-secondary), #6DA5CC);
     border-radius: 2px;
     animation: progressMove 2.2s ease-in-out infinite;
 }

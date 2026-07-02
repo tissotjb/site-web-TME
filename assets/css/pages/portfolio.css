@@ -1,13 +1,4 @@
-/*
-Liste des couleurs de la charte graphique
-Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
-Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
-Tertiaire : #2E2E2E         - Texte principal
-Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
-Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
-Blanc : #F5F5F5             - Fond principaux (section alternée)
-Accent chaud : #D9A441      - Survol des liens et boutons primaires
-*/
+/* Palette de couleurs : voir les variables CSS dans assets/css/main.css (:root) */
 
 .portfolio-header {
   text-align: center;
@@ -17,7 +8,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 
 .portfolio-header h1 {
   font-size: 2.4rem;
-  color: #2E4A66;
+  color: var(--color-primary);
   margin-bottom: 10px;
 }
 
@@ -33,7 +24,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     left: 25%;
     width: 50%;
     height: 4px;
-    background: linear-gradient(90deg, #2E4A66, #C2D5BE);
+    background: linear-gradient(90deg, var(--color-primary), var(--color-complementaire-2));
     margin-top: 8px;
     border-radius: 2px;
 }
@@ -50,7 +41,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 
 .portfolio-container h2 {
   font-size: 1.6rem;
-  color: #2E4A66;
+  color: var(--color-primary);
   margin-bottom: 10px;
 }
 
@@ -78,10 +69,6 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
   height: 100%;
   object-fit: cover;
   object-position: center;
-
-  will-change: transform;
-  transform: translateY(0);
-  transition: transform 0.5s ease
 }
 
 /* CONTENU DETAIL (masqué par défaut) */

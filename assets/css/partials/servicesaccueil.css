@@ -1,25 +1,16 @@
-/*
-Liste des couleurs de la charte graphique
-Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
-Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
-Tertiaire : #2E2E2E         - Texte principal
-Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
-Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
-Blanc : #F5F5F5             - Fond principaux (section alternée)
-Accent chaud : #D9A441      - Survol des liens et boutons primaires
-*/
+/* Palette de couleurs : voir les variables CSS dans assets/css/main.css (:root) */
 
 /* ===== Section Services ===== */
 
 .services {
-    background-color: #F5F5F5;
+    background-color: var(--color-blanc);
     padding: 80px 5%;
     text-align: center;
 }
 
 .section-title {
     font-size: 2rem;
-    color: #2E4A66;
+    color: var(--color-primary);
     margin-bottom: 10px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -28,7 +19,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 
 .savoir-plus {
     font-size: 1rem;
-    color: #2E4A66;
+    color: var(--color-primary);
     font-weight: 400;
     margin-bottom: 40px;
     letter-spacing: 0.5px;
@@ -65,7 +56,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     position: absolute;
     inset: 0;
     background: rgba(13, 44, 84, 0.85);
-    color: #F5F5F5;
+    color: var(--color-blanc);
     opacity: 0;
     visibility: hidden;
     padding: 20px;
@@ -84,7 +75,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 
 .service-overlay h3 {
     font-size: 1.3rem;
-    color: #97C1E1;
+    color: var(--color-secondary);
     margin-bottom: 10px;
 }
 
@@ -100,15 +91,15 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 }
 
 .cta-services p {
-    color: #2E2E2E;
+    color: var(--color-tertiary);
     font-size: 1.1rem;
     margin-bottom: 15px;
 }
 
 .btn-services {
     display: inline-block;
-    background: linear-gradient(135deg, #2E4A66 , #97C1E1);
-    color: #F5F5F5;
+    background: linear-gradient(135deg, var(--color-primary) , var(--color-secondary));
+    color: var(--color-blanc);
     padding: 12px 28px;
     border-radius: 30px;
     text-decoration: none;
@@ -119,10 +110,10 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 }
 
 .btn-services:hover {
-    background: linear-gradient(135deg, #97C1E1 , #C2D5BE);
+    background: linear-gradient(135deg, var(--color-secondary) , var(--color-complementaire-2));
     transform: translateY(-2px);
     border-color: rgba(255, 255, 255, 0.8);
-    color: #2E2E2E;
+    color: var(--color-tertiary);
     box-shadow: 0 10px 25px rgba(0, 120, 215, 0.4);
 }
 

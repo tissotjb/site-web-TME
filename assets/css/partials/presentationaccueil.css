@@ -1,18 +1,9 @@
-/*
-Liste des couleurs de la charte graphique
-Primaire : #2E4A66          - Titres et éléments forts / Liens et boutons primaires
-Secondaire : #97C1E1        - Détails décoratifs (icones, séparateurs, cartes, survols doux)
-Tertiaire : #2E2E2E         - Texte principal
-Complémentaire 1 : #5C7340  - Bouton secondaire, avec texte blanc
-Complémentaire 2 : #C2D5BE  - Fond principaux (section alternée)
-Blanc : #F5F5F5             - Fond principaux (section alternée)
-Accent chaud : #D9A441      - Survol des liens et boutons primaires
-*/
+/* Palette de couleurs : voir les variables CSS dans assets/css/main.css (:root) */
 
 .presentation {
     padding: 80px 5%;
     background-color: #F9F9F9;
-    color: #2E2E2E;
+    color: var(--color-tertiary);
 }
 
 .presentation-container {
@@ -31,7 +22,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 
 .presentation-text h2 {
     font-size: 2.2rem;
-    color: #2E4A66;
+    color: var(--color-primary);
     margin-bottom: 20px;
     position: relative;
 }
@@ -41,7 +32,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     display: block;
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, #2E4A66, #C2D5BE);
+    background: linear-gradient(90deg, var(--color-primary), var(--color-complementaire-2));
     margin-top: 8px;
     border-radius: 2px;
 }
@@ -58,7 +49,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 .presentation-text li {
     margin-bottom: 5px;
     list-style-type: "✓ ";
-    color: #2E4A66;
+    color: var(--color-primary);
     font-weight: 500;
 }
 
@@ -84,8 +75,8 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 /* Bouton CTA */
 .btn-presentation {
     display: inline-block;
-    background: linear-gradient(135deg, #2E4A66, #97C1E1);
-    color: #F5F5F5;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-blanc);
     padding: 2px 25px;
     border-radius: 40px;
     text-decoration: none;
@@ -96,9 +87,9 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 }
 
 .btn-presentation:hover {
-    background: linear-gradient(135deg, #97C1E1 , #C2D5BE);
+    background: linear-gradient(135deg, var(--color-secondary) , var(--color-complementaire-2));
     transform: translateY(-3px);
-    color: #2E2E2E;
+    color: var(--color-tertiary);
     box-shadow: 0 10px 30px rgba(0, 120, 215, 0.4);
 }
 
@@ -121,7 +112,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
 .about-chiffres h2{
     text-align: center;
     font-size: 2.2rem;
-    color: #2E4A66;
+    color: var(--color-primary);
     margin-bottom: 40px;
     position: relative;
 }
@@ -131,7 +122,7 @@ Accent chaud : #D9A441      - Survol des liens et boutons primaires
     display: block;
     width: 60px;
     height: 3px;
-    background: linear-gradient(90deg, #97C1E1, #C2D5BE);
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-complementaire-2));
     margin: 20px auto 0;
     border-radius: 2px;
 }

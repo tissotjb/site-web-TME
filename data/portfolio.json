@@ -2,7 +2,7 @@
     {
         "titre": "Bassières de Bas",
         "description": "Métrés Gros Oeuvre",
-        "image": "assets/medias/portfolio/BassieresDeBas.png",
+        "image": "assets/medias/portfolio/BassieresDeBas.webp",
         "adresse": "Route de Montadet - 32220 LOmBEZ",
         "surface": "Surface SHOB : 3 460 m²",
         "categorie": "metres-seuls"
@@ -11,7 +11,7 @@
     {
         "titre": "Les Aigrettes",
         "description": "Métrés Gros Oeuvre",
-        "image": "assets/medias/portfolio/LesAigrettes.png",
+        "image": "assets/medias/portfolio/LesAigrettes.webp",
         "adresse": "Lotissement Les Aigrettes - 82 120 - SAINT NICOLAS DE LA GRAVE",
         "surface": "Surface SHOB : 1 200 m²",
         "categorie": "metres-seuls"
@@ -20,7 +20,7 @@
     {
         "titre": "Gendarmeries Tarn & Garonne",
         "description": "Métrés Gros Oeuvre et VRD",
-        "image": "assets/medias/portfolio/GendarmeriesTG.png",
+        "image": "assets/medias/portfolio/GendarmeriesTG.webp",
         "adresse": "7 Gendarmeries - TARN & GARONNE",
         "surface": "Surface SHOB et Voiries: 3 800 m²",
         "categorie": "metres-seuls"
@@ -29,7 +29,7 @@
     {
         "titre": "Résidence Les Sarments - LOFTWOOD",
         "description": "Métrés Gros Oeuvre",
-        "image": "assets/medias/portfolio/LesSarments.png",
+        "image": "assets/medias/portfolio/LesSarments.webp",
         "adresse": "39 rue de la voie Romaine - 31150 GAGNAC-SUR-GARONNE",
         "surface": "Surface SHOB : 10 740 m²",
         "categorie": "metres-seuls"
@@ -38,7 +38,7 @@
     {
         "titre": "Laboratoire De Sangosse",
         "description": "Métrés Gros Oeuvre",
-        "image": "assets/medias/portfolio/DeSangosseDeyme.png",
+        "image": "assets/medias/portfolio/DeSangosseDeyme.webp",
         "adresse": "Chemin des Monges - 31450 DEYME",
         "surface": "Surface SHOB : 2 750 m²",
         "categorie": "metres-seuls"
@@ -47,7 +47,7 @@
     {
         "titre": "Extension Collège Azaña",
         "description": "Métrés Gros Oeuvre",
-        "image": "assets/medias/portfolio/AnazaMontauban.png",
+        "image": "assets/medias/portfolio/AnazaMontauban.webp",
         "adresse": "Avenue de Falguières - 82000 MONTAUBAN",
         "surface": "Surface SHOB : 650 m²",
         "categorie": "metres-seuls"
@@ -56,7 +56,7 @@
     {
         "titre": "Création d'un bâtiment ESSOR",
         "description": "Métrés Gros Oeuvre",
-        "image": "assets/medias/portfolio/EssorGimont.png",
+        "image": "assets/medias/portfolio/EssorGimont.webp",
         "adresse": "ZAE Lafourcade Nord - 32200 GIMONT",
         "surface": "Surface SHOB : 560 m²",
         "categorie": "metres-seuls"
@@ -65,7 +65,7 @@
     {
         "titre": "Extension Fédération Française du Bâtiment",
         "description": "Métrés Gros Oeuvre",
-        "image": "assets/medias/portfolio/FBTPMontauban.png",
+        "image": "assets/medias/portfolio/FBTPMontauban.webp",
         "adresse": "82 Avenue du Portugal - 82000 MONTAUBAN",
         "surface": "Surface SHOB : 1 170 m²",
         "categorie": "metres-seuls"
@@ -74,7 +74,7 @@
     {
         "titre": "Réhabilitation pour GRAND FRAIS",
         "description": "Métrés Gros Oeuvre - Dallage & Curage - Démolitions",
-        "image": "assets/medias/portfolio/GrandFraisMarmande.png",
+        "image": "assets/medias/portfolio/GrandFraisMarmande.webp",
         "adresse": "18 Avenue Hubert Ruffe - 47200 MARMANDE",
         "surface": "Surface SHOB : 2 000 m²",
         "categorie": "metres-seuls"
@@ -83,7 +83,7 @@
     {
         "titre": "POLE D'ECHANGE MULTIMODAL DE LABEGE - Tisséo Ingéniérie",
         "description": "Métrés Gros Oeuvre - Charpente métallique - Façade - Serrurerie lourde",
-        "image": "assets/medias/portfolio/PEMLabege.png",
+        "image": "assets/medias/portfolio/PEMLabege.webp",
         "adresse": "Rue du Chêne Vert - 31670 LABEGE",
         "surface": "Surface SHOB : 30 000 m²",
         "categorie": "metres-seuls"
@@ -92,7 +92,7 @@
     {
         "titre": "RESIDENCE BOILLOT - Demathieu Bard Immobilier",
         "description": "Métrés Gros Oeuvre",
-        "image": "assets/medias/portfolio/AgenBoillot.png",
+        "image": "assets/medias/portfolio/AgenBoillot.webp",
         "adresse": "Rue André Boillot - 47000 AGEN",
         "surface": "Surface SHOB : 4 290 m²",
         "categorie": "metres-seuls"
@@ -101,7 +101,7 @@
     {
         "titre": "VERDUN-SUR-GARONNE - Mésolia",
         "description": "Métrés Gros Oeuvre",
-        "image": "assets/medias/portfolio/VerdunSurGaronne.png",
+        "image": "assets/medias/portfolio/VerdunSurGaronne.webp",
         "adresse": "1 rue Clément Isaure - 82600 VERDUN SUR GARONNE",
         "surface": "Surface SHOB : 3 200 m²",
         "categorie": "metres-seuls"
@@ -110,7 +110,7 @@
     {
         "titre": "Labastide St-Pierre - ALTEAL",
         "description": "Métrés Gros Oeuvre",
-        "image": "assets/medias/portfolio/LabastideStPierreAlteal.png",
+        "image": "assets/medias/portfolio/LabastideStPierreAlteal.webp",
         "adresse": "Rue Olympe de Gouges - 82370 LABASTIDE ST-PIERRE",
         "surface": "Surface SHOB : 1 550 m²",
         "categorie": "metres-seuls"
@@ -119,7 +119,7 @@
     {
         "titre": "Résidence LALOUBERE",
         "description": "Métrés Gros-Oeuvre",
-        "image": "assets/medias/portfolio/Laloubere.png",
+        "image": "assets/medias/portfolio/Laloubere.webp",
         "adresse": "Rue de l'Allée - 65310 LALOUBERE",
         "surface": "Surface SHOB : 3 500 m²",
         "categorie": "metres-seuls"
@@ -128,7 +128,7 @@
     {
         "titre": "CITROEN - Promologis",
         "description": "Métrés & chiffrage Gros-Oeuvre",
-        "image": "assets/medias/portfolio/Citroen - Promologis.jpg",
+        "image": "assets/medias/portfolio/Citroen - Promologis.webp",
         "adresse": "142 Avenue des Etats Unis - TOULOUSE",
         "surface": "Surface SHOB : 6 500 m²",
         "categorie": "metres-chiffrages"
@@ -137,7 +137,7 @@
     {
         "titre": "Résidence Jeune's AKTIFS",
         "description": "Métrés et chiffrage Gros-Oeuvre",
-        "image": "assets/medias/portfolio/JeunesAktifsTarbes.png",
+        "image": "assets/medias/portfolio/JeunesAktifsTarbes.webp",
         "adresse": "51 rue François Marques - 65000 TARBES",
         "surface": "Surface SHOB : 2 100 m²",
         "categorie": "metres-chiffrages"

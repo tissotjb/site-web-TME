@@ -8,17 +8,28 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(res => res.text())
             .then(data => {
                 el.innerHTML = data;
-                
+
                 // ===== CODE MENU BURGER =====
                 const burger = el.querySelector("#burger");
                 const navLinks = el.querySelector("#nav-links");
 
                 if (burger && navLinks) {
+                    burger.setAttribute("aria-expanded", "false");
                     burger.addEventListener("click", () => {
-                        navLinks.classList.toggle("show");
-                        burger.classList.toogle("active");
+                        const isOpen = navLinks.classList.toggle("show");
+                        burger.classList.toggle("active");
+                        burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
                     });
                 }
+
+                // ===== LIEN DE NAVIGATION ACTIF =====
+                const currentPage = window.location.pathname.split("/").pop() || "index.html";
+                el.querySelectorAll("#nav-links a").forEach(link => {
+                    const linkPage = link.getAttribute("href");
+                    if (linkPage === currentPage) {
+                        link.setAttribute("aria-current", "page");
+                    }
+                });
 
                 // ===== HEADER SCROLL
                 const header = document.querySelector('header');
@@ -35,21 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(err => console.error("Erreur chargement :", file, err));
     })
 })
-
-// Script pour menu Burger
-
-document.addEventListener('DOMContentLoaded', () => {
-  const burger = document.getElementById('burger');
-  const navLinks = document.getElementById('nav-links');
-
-  // Vérifie si l'élément existe avant de l'utiliser
-  if (burger && navLinks) {
-    burger.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
-        burger.classList.toggle('active');
-    });
-  }
-});
 
 //Fonction pour charger le loader commun à toutes les pages
 async function includeLoader() {
