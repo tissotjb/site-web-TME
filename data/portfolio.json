@@ -1,9 +1,18 @@
 [
     {
+        "titre": "Extension Casino Barrière",
+        "description": "Métrés Gros Oeuvre",
+        "image": "assets/medias/portfolio/ExtCasinoBarriere.png",
+        "adresse": "18 chemin de la Loge - 31400 TOULOUSE",
+        "surface": "Surface SHOB : 3 200 m²",
+        "categorie": "metres-seuls"
+    },
+
+    {
         "titre": "Bassières de Bas",
         "description": "Métrés Gros Oeuvre",
         "image": "assets/medias/portfolio/BassieresDeBas.webp",
-        "adresse": "Route de Montadet - 32220 LOmBEZ",
+        "adresse": "Route de Montadet - 32220 LOMBEZ",
         "surface": "Surface SHOB : 3 460 m²",
         "categorie": "metres-seuls"
     },
